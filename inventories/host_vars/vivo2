@@ -1,0 +1,66 @@
+---
+
+host:
+    fqdn: vivo2.milab.joshwest.me
+    name: vivo2
+    pxe: rhel83physical
+network: 
+    lan: 
+        device: eno1
+        ip: 192.168.100.25
+        mac: b0:6e:bf:0b:93:2a
+
+disks: 
+    devices:
+        main:
+            name: sda
+            size: 1.8 TiB
+            type: ssd
+    partitions:
+        boot:
+            type: xfs
+            size: 1024      
+            mount: /boot
+            grow: false
+        efi: 
+            type: efi
+            size: 600  
+            mount: /boot/efi     
+            fsoptions: umask=0077,shortname=winnt
+            grow: false
+        sda_lvmpv:
+            disk: sda
+            type: lvmpv
+            size: 1887436
+            mount: pv.ssd1
+            grow: true
+    volgroups:
+        sda_group: 
+            name: vgssd1
+            pesize: 4096
+            partitions: pv.ssd1
+    logvols:            
+        swap: 
+            volgroup: vgssd1
+            size: 59392         # 2x 32gb ram 
+            type: swap
+            mount: swap
+            grow: false
+        home:
+            volgroup: vgssd1
+            size: 220480 
+            type: xfs
+            mount: /home
+            grow: false
+        root: 
+            volgroup: vgssd1
+            size: 500240        # extra space for NFS based registry and PVs
+            type: xfs
+            mount: /
+            grow: false
+        libvirt_ssd:
+            volgroup: vgssd1
+            size: 600436
+            type: xfs
+            mount: /var/lib/libvirt/images/ssdpool
+            grow: true

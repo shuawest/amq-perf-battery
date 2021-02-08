@@ -1,0 +1,76 @@
+---
+
+disks: 
+    devices:
+        main:
+            name: nvme0n1
+            size: 238.5 GiB
+            type: ssd
+        supp:
+            name: sda
+            size: 931.5 GiB
+            type: spin
+    partitions:
+        boot:
+            type: xfs
+            size: 1024      
+            mount: /boot
+            grow: false
+        efi: 
+            type: efi
+            size: 600  
+            mount: /boot/efi     
+            fsoptions: umask=0077,shortname=winnt
+            grow: false
+        nvme0n1_lvmpv:
+            disk: nvme0n1
+            type: lvmpv
+            size: 244197
+            mount: pv.ssd1
+            grow: true
+        sda_lvmpv:
+            disk: sda
+            type: lvmpv
+            size: 952244
+            mount: pv.spin1
+            grow: true
+    volgroups:
+        nvme0n1_group: 
+            name: vgssd1
+            pesize: 4096
+            partitions: pv.ssd1
+        sda_group:
+            name: vgspin1
+            pesize: 4096
+            partitions: pv.spin1
+    logvols:            
+        swap: 
+            volgroup: vgssd1
+            size: 59392         # 2x 32gb ram 
+            type: swap
+            mount: swap
+            grow: false
+        home:
+            volgroup: vgspin1
+            size: 220480
+            type: xfs
+            mount: /home
+            grow: true
+        root: 
+            volgroup: vgspin1
+            size: 10240
+            type: xfs
+            mount: /
+            grow: true
+        libvirt_ssd:
+            volgroup: vgssd1
+            size: 163840
+            type: xfs
+            mount: /var/lib/libvirt/images/ssdpool
+            grow: true
+        libvirt_spin:
+            volgroup: vgspin1
+            size: 619200
+            type: xfs
+            mount: /var/lib/libvirt/images/spinpool
+            grow: false  

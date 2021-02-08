@@ -1,0 +1,163 @@
+---
+
+# stop & clean broker
+# - stop service
+# - kill any any Artemis services seen in JPS
+# - delete the broker directory if it exists
+# - delete the data directory if it exists
+
+- name: Stop Artemis Service
+  ignore_errors: true
+  shell: |
+    {{amq_instance_path}}/bin/artemis-service stop
+
+- name: Force Stop Artemis Service
+  ignore_errors: true
+  shell: |
+    {{amq_instance_path}}/bin/artemis-service force-stop
+
+- name: Force kill all Artemis Services
+  ignore_errors: true
+  shell: |
+    jps -l | grep {{amq_jps_name}} | awk '{print $1}' | xargs kill -9
+
+- name: Pause while shutting down 
+  pause:
+    seconds: 5
+
+- name: Remove AMQ Broker instance
+  file:
+    path: "{{amq_instance_path}}/"
+    state: absent
+
+- name: Remove AMQ Broker data directory
+  file:
+    path: "{{amq_data_dir}}/"
+    state: absent
+
+# prereqs
+# - install jdk and unzip with yum
+# - ensure the broker binary available and unzipped
+# - ensure the filewall ports are open
+
+- name: Create broker root path if it doesn't exist
+  file: 
+    path: "{{amq_root}}"
+    state: directory
+
+- name: Ensure broker firewall ports are open
+  become: true
+  with_items: 
+  - "{{amq_web_port}}/tcp"
+  - "{{amq_amqp_port}}/tcp"
+  - "{{amq_core_port}}/tcp"
+  ansible.posix.firewalld:
+    port: "{{item}}"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: Install prerequisite packages
+  become: yes
+  vars:
+    packages:
+    - libaio
+    - java-1.8.0-openjdk
+    - java-1.8.0-openjdk-devel
+    - unzip
+    - firewalld
+  dnf:
+    name: "{{ packages }}"
+    state: present
+
+- name: Copy broker to host
+  copy: 
+    src: "{{amq_archive_local}}"
+    dest: "{{amq_archive_remote}}"
+
+- name: Unzip broker archive
+  unarchive:
+    remote_src: yes
+    src: "{{amq_archive_remote}}"
+    dest: "{{amq_root}}"
+    creates: "{{amq_install_path}}/bin/artemis"
+
+# configure broker host
+# - ensure data directory exists
+# - create the broker
+# - overwrite the broker.xml from template
+# - catpure the broker.xml from the runner
+# - capture the write speed
+# - start the broker service
+
+- name: Ensure data directory exists
+  file: 
+    path: "{{amq_data_dir}}"
+    state: directory
+
+- name: Create broker instance
+  args: 
+    chdir: "{{amq_root}}"
+  shell: |
+    {{amq_install_path}}/bin/artemis create \
+      --allow-anonymous \
+      --user {{amq_broker_user}} --password {{amq_broker_pass}} \
+      --cluster-user {{amq_cluster_user}} --cluster-password {{amq_cluster_pass}} \
+      --host {{amq_host}} --http-host {{amq_host}} --port-offset {{amq_port_offset}} \
+      --aio --shared-store --autocreate --no-hornetq-acceptor --no-mqtt-acceptor --no-stomp-acceptor --message-load-balancing OFF \
+      --journal-device-block-size {{amq_journalDeviceBlockSize}} \
+      --global-max-size {{amq_globalMaxSize}} \
+      --data {{amq_data_dir}} \
+      --{{amq_storage_mode}} \
+      --name {{amq_broker_name}} \
+      {{amq_broker_name}} > {{amq_root}}/createinstance.log 2>&1
+
+- name: Fetch the createinstance.log log to the run
+  fetch:
+    src: "{{amq_root}}/createinstance.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/createinstance.log"
+    flat: yes
+    fail_on_missing: no
+
+- name: Fetch the broker.xml log to the run
+  fetch:
+    src: "{{amq_instance_path}}/etc/broker.xml"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/broker.orig.xml"
+    flat: yes
+    fail_on_missing: no
+
+- name: Configure etc/broker.xml from template
+  template: 
+    src: templates/broker.xml.j2
+    dest: "{{amq_instance_path}}/etc/broker.xml"
+    backup: yes
+
+- name: Start broker instance
+  shell: |
+    export JAVA_ARGS="-XX:+PrintClassHistogram -XX:+UseG1GC -Xms{{amq_broker_heap_min}} -Xmx{{amq_broker_heap_max}} -Dhawtio.disableProxy=true -Dhawtio.realm=activemq  -Dhawtio.offline=true -Dhawtio.role=amq -Dhawtio.rolePrincipalClasses=org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal -Djolokia.policyLocation=file:{{amq_instance_path}}/etc/jolokia-access.xml -Djon.id=amq"
+    {{amq_instance_path}}/bin/artemis-service start
+  register: instance_start_result
+
+- name: Start broker instance result
+  debug: 
+    msg: "{{instance_start_result.stdout}}"
+
+
+# after test
+# - capture the broker log
+
+- name: Ensure data directory exists
+  file: 
+    path: "{{amq_battery_run_root}}/{{amq_battery_run_id}}"
+    state: directory
+  delegate_to: localhost
+
+- name: Fetch the artemis log to the run
+  fetch:
+    src: "{{amq_instance_path}}/log/artemis.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/artemis.boot.log"
+    flat: yes
+    fail_on_missing: no
+
+
+

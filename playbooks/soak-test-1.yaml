@@ -1,0 +1,11 @@
+---
+
+- hosts: vivo2
+  gather_facts: yes
+  tasks: 
+
+    - name: Create and start a single broker instance
+      include_role:
+        name: amqbroker
+        tasks_from: main.yaml
+        

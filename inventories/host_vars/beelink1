@@ -1,0 +1,12 @@
+--- 
+
+host:
+    fqdn: beelink1.milab.joshwest.me
+    name: beelink1
+    pxe: rhel83physical
+network:
+    lan: 
+        device: eno1
+        ip: 192.168.100.21
+        mac: c4:4e:ac:b3:e9:dc
+

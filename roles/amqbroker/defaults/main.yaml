@@ -1,0 +1,58 @@
+---
+
+amq_battery_run_id: a1
+amq_battery_run_root: /Users/jowest/dev/repos/msgaas/amq-perf-battery/runs
+
+amq_root: /home/jowest/msgaas
+amq_archive_local: /Users/jowest/dev/archives/redhat/amq-broker-7.8.1/amq-broker-7.8.1-bin.zip
+amq_archive_remote: "{{amq_root}}/amq-broker-7.8.1-bin.zip"
+amq_install_path: "{{amq_root}}/amq-broker-7.8.1"
+
+amq_jps_name: org.apache.activemq.artemis.boot.Artemis
+
+amq_cluster_type: sharedstore
+amq_cluster_instance: master
+
+amq_broker_cluster_index: 1
+amq_broker_name: "{{amq_cluster_type}}_{{amq_cluster_instance}}_{{amq_broker_cluster_index}}"
+
+amq_instance_path: "{{amq_root}}/{{amq_broker_name}}"
+amq_data_dir: "{{amq_root}}/data"
+
+amq_broker_user: admin
+amq_broker_pass: admin
+amq_cluster_user: clusteruser
+amq_cluster_pass: clusterpass
+amq_cluster_failover: "false"
+
+amq_host: localhost
+amq_port_offset: 0
+amq_web_port: 8161
+amq_amqp_port: 5672
+amq_core_port: 61616
+amq_broker_heap_min: 8G
+amq_broker_heap_max: 8G
+
+tcpSendBufferSize: 1048576
+tcpReceiveBufferSize: 1048576
+amqpCredits: 1000
+amqpLowCredits: 300
+
+amq_globalMaxSize: 8192
+amq_journalDeviceBlockSize: 16384
+amq_pageSyncTimeout: 1436000
+amq_maxDiskUsage: 90
+amq_diskScanPeriod: 5000
+amq_journalMaxIo: 4096
+amq_journalBufferTimeout: 20000
+amq_journalDatasync: "true"
+amq_journalMinFiles: 2
+amq_journalPoolFiles: 10
+amq_journalFileSize: 10M
+amq_journalType: ASYNCIO
+amq_persistenceEnabled: "true"
+#amq_storage_mode: blocking    
+#amq_address_full_policy: BLOCK  
+amq_storage_mode: paging
+amq_address_full_policy: PAGE   
+
