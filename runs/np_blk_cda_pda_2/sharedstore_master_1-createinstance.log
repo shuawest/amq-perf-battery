@@ -1,0 +1,13 @@
+Creating ActiveMQ Artemis instance at: /home/jowest/msgaas/sharedstore_master_1
+
+Auto tuning journal ...
+done! Your system can make 62.5 writes per millisecond, your journal-buffer-timeout will be 16000
+
+You can now start the broker by executing:  
+
+   "/home/jowest/msgaas/sharedstore_master_1/bin/artemis" run
+
+Or you can run the broker in the background using:
+
+   "/home/jowest/msgaas/sharedstore_master_1/bin/artemis-service" start
+

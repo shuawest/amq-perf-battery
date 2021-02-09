@@ -1,0 +1,20 @@
+---
+
+- name: Fetching results for broker
+  debug:
+    msg:
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "amq_cluster_type: {{amq_cluster_type}}"
+      - "amq_cluster_instance: {{amq_cluster_instance}}"
+      - "amq_broker_cluster_index: {{amq_broker_cluster_index}}"
+
+
+- name: Fetch the artemis log to the run
+  fetch:
+    src: "{{amq_instance_path}}/log/artemis.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/artemis.log"
+    flat: yes
+    fail_on_missing: no
+
+
+
