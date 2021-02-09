@@ -1,0 +1,404 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.jboss.examples:amqp-perf-test >------------------
+[INFO] Building ActiveMQ Perf: AMQP Perf Test 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- activemq-perf-maven-plugin:5.11.0:consumer (default-cli) @ amqp-perf-test ---
+[INFO] Loading properties file: /home/jowest/msgaas/amqp-perf-test/src/main/resources/p_pg_cda_pda_1-vivo1_consumer4-amqp-consumer.properties
+[INFO] Created: org.apache.qpid.jms.JmsConnectionFactory using SPIConnectionFactory: org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:9 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:3 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:7 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:4 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:8 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:6 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:5 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-45849-1612884279189-0:2 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+#########################################
+####    SYSTEM THROUGHPUT SUMMARY    ####
+#########################################
+System Total Throughput: 6444140
+System Total Clients: 8
+System Average Throughput: 21624.630872483223
+System Average Throughput Excluding Min/Max: 21490.057046979866
+System Average Client Throughput: 2703.078859060403
+System Average Client Throughput Excluding Min/Max: 2686.2571308724832
+Min Client Throughput Per Sample: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer6, value=0
+Max Client Throughput Per Sample: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer1, value=5411
+Min Client Total Throughput: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer5, value=805066
+Max Client Total Throughput: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer0, value=805909
+Min Average Client Throughput: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer5, value=2701.5637583892617
+Max Average Client Throughput: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer0, value=2704.3926174496646
+Min Average Client Throughput Excluding Min/Max: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer5, value=2685.181208053691
+Max Average Client Throughput Excluding Min/Max: clientName=p_pg_cda_pda_1-vivo1_consumer4JmsConsumer2, value=2687.5637583892617
+########################################
+####    SYSTEM CPU USAGE SUMMARY    ####
+########################################
+Total Blocks Received: 2121444
+Ave Blocks Received: 7167.040540540541
+Total Blocks Sent: 2465698
+Ave Blocks Sent: 8330.06081081081
+Total Context Switches: 58801611
+Ave Context Switches: 198654.0912162162
+Total User Time: 10606
+Ave User Time: 35.83108108108108
+Total System Time: 8571
+Ave System Time: 28.95608108108108
+Total Idle Time: 10257
+Ave Idle Time: 34.652027027027025
+Total Wait Time: 164
+Ave Wait Time: 0.5540540540540541
+[INFO] Created performance report: /home/jowest/msgaas/amqp-perf-test/./target/p_pg_cda_pda_1-vivo1_consumer4JmsConsumer_numClients8_numDests1_equal.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:01 min
+[INFO] Finished at: 2021-02-09T10:29:40-05:00
+[INFO] ------------------------------------------------------------------------

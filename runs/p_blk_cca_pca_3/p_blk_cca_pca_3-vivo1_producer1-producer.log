@@ -1,0 +1,611 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.jboss.examples:amqp-perf-test >------------------
+[INFO] Building ActiveMQ Perf: AMQP Perf Test 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- activemq-perf-maven-plugin:5.11.0:producer (default-cli) @ amqp-perf-test ---
+[INFO] Loading properties file: /home/jowest/msgaas/amqp-perf-test/src/main/resources/p_blk_cca_pca_3-vivo1_producer1-amqp-producer.properties
+[INFO] Created: org.apache.qpid.jms.JmsConnectionFactory using SPIConnectionFactory: org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:22 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:24 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:21 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:19 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:16 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:18 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:5 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:7 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:14 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:27 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:31 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:29 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:9 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:6 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:10 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:8 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:32 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:2 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:4 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:3 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:13 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:15 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:28 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:20 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:34 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:38 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:30 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:25 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:11 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:33 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:23 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:54 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:37 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:60 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:80 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:12 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:71 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:53 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:70 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:35 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:42 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:36 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:46 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:61 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:26 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:79 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:50 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:17 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:45 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:59 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:73 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:67 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:78 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:41 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:72 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:56 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:68 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:40 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:69 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:48 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:57 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:55 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:66 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:64 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:51 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:63 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:77 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:49 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:76 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:85 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:47 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:75 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:58 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:82 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:87 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:39 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:65 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:43 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:62 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:83 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:89 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:74 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:93 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:86 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:84 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:44 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:52 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:90 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:88 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:81 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:92 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:96 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:99 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:91 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:94 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:97 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:100 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:98 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:95 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:vivo1.milab.joshwest.me-40435-1612883084762-0:101 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating producer to: TEST.PERF with persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms

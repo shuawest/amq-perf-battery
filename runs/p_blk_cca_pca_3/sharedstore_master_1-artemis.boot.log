@@ -1,0 +1,23 @@
+2021-02-09 10:04:29,608 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2021-02-09 10:04:29,648 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/jowest/msgaas/data/journal,bindingsDirectory=/home/jowest/msgaas/data/bindings,largeMessagesDirectory=/home/jowest/msgaas/data/large-messages,pagingDirectory=/home/jowest/msgaas/data/paging)
+2021-02-09 10:04:29,649 INFO  [org.apache.activemq.artemis.core.server] AMQ221006: Waiting to obtain live lock
+2021-02-09 10:04:29,669 INFO  [org.apache.activemq.artemis.core.server] AMQ221012: Using AIO Journal
+2021-02-09 10:04:29,733 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2021-02-09 10:04:29,733 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2021-02-09 10:04:29,733 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2021-02-09 10:04:29,734 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2021-02-09 10:04:29,734 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2021-02-09 10:04:29,734 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2021-02-09 10:04:29,771 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2021-02-09 10:04:29,771 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2021-02-09 10:04:29,857 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address DLQ supporting [ANYCAST]
+2021-02-09 10:04:29,866 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue DLQ on address DLQ
+2021-02-09 10:04:29,898 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address ExpiryQueue supporting [ANYCAST]
+2021-02-09 10:04:29,900 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue ExpiryQueue on address ExpiryQueue
+2021-02-09 10:04:30,118 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started EPOLL Acceptor at vivo2.milab.joshwest.me:61616 for protocols [CORE,MQTT,AMQP,STOMP,HORNETQ,OPENWIRE]
+2021-02-09 10:04:30,131 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started EPOLL Acceptor at vivo2.milab.joshwest.me:5672 for protocols [AMQP]
+2021-02-09 10:04:30,134 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2021-02-09 10:04:30,134 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.16.0.redhat-00012 [sharedstore_master_1, nodeID=1bcbf39e-6ae8-11eb-a1aa-b06ebf0b932a] 
+2021-02-09 10:04:30,284 INFO  [org.apache.amq.hawtio.branding.PluginContextListener] Initialized amq-broker-redhat-branding plugin
+2021-02-09 10:04:30,309 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2021-02-09 10:04:30,563 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://vivo2.milab.joshwest.me:8161

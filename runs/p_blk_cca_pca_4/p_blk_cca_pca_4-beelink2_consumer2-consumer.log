@@ -1,0 +1,1040 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.jboss.examples:amqp-perf-test >------------------
+[INFO] Building ActiveMQ Perf: AMQP Perf Test 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- activemq-perf-maven-plugin:5.11.0:consumer (default-cli) @ amqp-perf-test ---
+[INFO] Loading properties file: /home/jowest/msgaas/amqp-perf-test/src/main/resources/p_blk_cca_pca_4-beelink2_consumer2-amqp-consumer.properties
+[INFO] Created: org.apache.qpid.jms.JmsConnectionFactory using SPIConnectionFactory: org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Creating queue: queue://TEST.PERF
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:55 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:78 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:52 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:80 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:45 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:21 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:11 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:37 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:34 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:22 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:71 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:77 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:87 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:93 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:48 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:58 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:84 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:92 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:53 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:29 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:72 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:60 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:74 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:6 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:97 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:41 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:23 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:76 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:90 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:7 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:99 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:67 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:42 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:5 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:3 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:24 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:19 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:57 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:75 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:15 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:54 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:101 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:44 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:94 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:100 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:50 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:18 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:46 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:14 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:64 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:12 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:86 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:68 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:28 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:32 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:17 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:39 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:88 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:35 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:38 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:96 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:25 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:91 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:81 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:27 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:69 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:8 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:13 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:61 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:20 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:63 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:2 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:36 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:70 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:4 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:33 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:66 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:73 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:89 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:31 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:49 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:47 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:10 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:82 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:95 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:59 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:65 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:40 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:62 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:56 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:98 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:83 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:79 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:43 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:16 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:9 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:51 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:30 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:85 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink2.milab.joshwest.me-46013-1612883670198-0:26 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Creating non-durable consumer to: TEST.PERF
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Starting to asynchronously receive messages for 300000 ms...
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[INFO] Client completed
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+[WARNING] Unrecognized CPU data. st=0
+#########################################
+####    SYSTEM THROUGHPUT SUMMARY    ####
+#########################################
+System Total Throughput: 22983
+System Total Clients: 100
+System Average Throughput: 79.80208333333334
+System Average Throughput Excluding Min/Max: 41.53125
+System Average Client Throughput: 0.7980208333333334
+System Average Client Throughput Excluding Min/Max: 0.4153125
+Min Client Throughput Per Sample: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer60, value=0
+Max Client Throughput Per Sample: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer52, value=188
+Min Client Total Throughput: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer51, value=139
+Max Client Total Throughput: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer52, value=318
+Min Average Client Throughput: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer51, value=0.4826388888888889
+Max Average Client Throughput: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer52, value=1.1041666666666667
+Min Average Client Throughput Excluding Min/Max: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer51, value=0.2534722222222222
+Max Average Client Throughput Excluding Min/Max: clientName=p_blk_cca_pca_4-beelink2_consumer2JmsConsumer29, value=0.4548611111111111
+########################################
+####    SYSTEM CPU USAGE SUMMARY    ####
+########################################
+Total Blocks Received: 364005
+Ave Blocks Received: 1263.90625
+Total Blocks Sent: 1746260
+Ave Blocks Sent: 6063.402777777777
+Total Context Switches: 691984
+Ave Context Switches: 2402.722222222222
+Total User Time: 219
+Ave User Time: 0.7604166666666666
+Total System Time: 135
+Ave System Time: 0.46875
+Total Idle Time: 27802
+Ave Idle Time: 96.53472222222223
+Total Wait Time: 509
+Ave Wait Time: 1.7673611111111112
+[INFO] Created performance report: /home/jowest/msgaas/amqp-perf-test/./target/p_blk_cca_pca_4-beelink2_consumer2JmsConsumer_numClients100_numDests1_equal.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 05:03 min
+[INFO] Finished at: 2021-02-09T10:19:32-05:00
+[INFO] ------------------------------------------------------------------------
