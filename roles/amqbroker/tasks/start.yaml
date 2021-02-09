@@ -1,0 +1,97 @@
+---
+
+
+- include_tasks: clean.yaml
+
+- name: Starting broker with parameters
+  debug:
+    msg: 
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "amq_cluster_type: {{amq_cluster_type}}"
+      - "amq_host: {{amq_host}}"
+      - "amq_broker_cluster_index: {{amq_broker_cluster_index}}"
+      - "amq_cluster_instance: {{amq_cluster_instance}}"
+      - "amq_port_offset: {{amq_port_offset}}"
+      - "amq_broker_heap_min: {{amq_broker_heap_min}}"
+      - "amq_broker_heap_max: {{amq_broker_heap_max}}"
+      - "amq_globalMaxSize: {{amq_globalMaxSize}}"
+      - "amq_journalDeviceBlockSize: {{amq_journalDeviceBlockSize}}"
+      - "amq_pageSyncTimeout: {{amq_pageSyncTimeout}}"
+      - "amq_diskScanPeriod: {{amq_diskScanPeriod}}"
+      - "amq_journalMaxIo: {{amq_journalMaxIo}}"
+      - "amq_journalBufferTimeout: {{amq_journalBufferTimeout}}"
+      - "amq_journalDatasync: {{amq_journalDatasync}}"
+      - "amq_journalMinFiles: {{amq_journalMinFiles}}"
+      - "amq_journalPoolFiles: {{amq_journalPoolFiles}}"
+      - "amq_journalFileSize: {{amq_journalFileSize}}"
+      - "amq_journalType: {{amq_journalType}}"
+      - "amq_storage_mode: {{amq_storage_mode}}"
+      - "amq_address_full_policy: {{amq_address_full_policy}}"
+
+- name: Ensure data directory exists
+  file: 
+    path: "{{amq_data_dir}}"
+    state: directory
+
+- name: Create broker instance
+  args: 
+    chdir: "{{amq_root}}"
+  shell: |
+    {{amq_install_path}}/bin/artemis create \
+      --allow-anonymous --relax-jolokia \
+      --user {{amq_broker_user}} --password {{amq_broker_pass}} \
+      --cluster-user {{amq_cluster_user}} --cluster-password {{amq_cluster_pass}} \
+      --host {{amq_host}} --http-host {{amq_host}} --port-offset {{amq_port_offset}} \
+      --aio --shared-store --autocreate --no-hornetq-acceptor --no-mqtt-acceptor --no-stomp-acceptor --message-load-balancing OFF \
+      --journal-device-block-size {{amq_journalDeviceBlockSize}} \
+      --global-max-size {{amq_globalMaxSize}} \
+      --data {{amq_data_dir}} \
+      --{{amq_storage_mode}} \
+      --name {{amq_broker_name}} \
+      {{amq_broker_name}} > {{amq_root}}/{{amq_broker_name}}-createinstance.log 2>&1
+
+- name: Fetch the createinstance.log log to the run
+  fetch:
+    src: "{{amq_root}}/{{amq_broker_name}}-createinstance.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{amq_broker_name}}-createinstance.log"
+    flat: yes
+    fail_on_missing: no
+
+- name: Fetch the broker.xml log to the run
+  fetch:
+    src: "{{amq_instance_path}}/etc/broker.xml"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{amq_broker_name}}-broker.orig.xml"
+    flat: yes
+    fail_on_missing: no
+
+- name: Configure etc/broker.xml from template
+  template: 
+    src: templates/broker.xml.j2
+    dest: "{{amq_instance_path}}/etc/broker.xml"
+    backup: yes
+
+- name: Start broker instance
+  shell: |
+    export JAVA_ARGS="-XX:+PrintClassHistogram -XX:+UseG1GC -Xms{{amq_broker_heap_min}} -Xmx{{amq_broker_heap_max}} -Dhawtio.disableProxy=true -Dhawtio.realm=activemq  -Dhawtio.offline=true -Dhawtio.role=amq -Dhawtio.rolePrincipalClasses=org.apache.activemq.artemis.spi.core.security.jaas.RolePrincipal -Djolokia.policyLocation=file:{{amq_instance_path}}/etc/jolokia-access.xml -Djon.id=amq"
+    {{amq_instance_path}}/bin/artemis-service start
+  register: instance_start_result
+
+- name: Start broker instance result
+  debug: 
+    msg: "{{instance_start_result.stdout}}"
+
+- name: Ensure run output directory exists
+  file: 
+    path: "{{amq_battery_run_root}}/{{amq_battery_run_id}}"
+    state: directory
+  delegate_to: localhost
+
+- name: Fetch the artemis log to the run
+  fetch:
+    src: "{{amq_instance_path}}/log/artemis.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{amq_broker_name}}-artemis.boot.log"
+    flat: yes
+    fail_on_missing: no
+
+
+

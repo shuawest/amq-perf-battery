@@ -1,0 +1,77 @@
+---
+
+- hosts: vivo2
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Create and start a single broker instance
+      include_role:
+        name: amqbroker
+        tasks_from: main.yaml
+
+- hosts: vivo1,beelink1,beelink2,beelink3 
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Setup host, clean existing processes, and perf client
+      include_role:
+        name: amqp-perf
+        tasks_from: prereqs.yaml      
+
+- hosts: beelink2,vivo1
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Run consumer
+      include_role:
+        name: amqp-perf
+        tasks_from: perf-consumer.yaml
+
+- hosts: beelink3,beelink1
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Run producer
+      include_role:
+        name: amqp-perf
+        tasks_from: perf-producer.yaml
+
+- hosts: localhost
+  gather_facts: yes
+  tasks: 
+    - name: Pause while running load test 
+      pause:
+        minutes: 6
+
+- hosts: vivo2
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Fetch broker logs / results
+      include_role:
+        name: amqbroker
+        tasks_from: fetch-results.yaml
+
+- hosts: vivo1,beelink1,beelink2,beelink3  
+  gather_facts: yes
+  vars:
+    amq_host: vivo2.milab.joshwest.me
+  tasks: 
+
+    - name: Fetch producer/consumer results
+      include_role:
+        name: amqp-perf
+        tasks_from: fetch-results.yaml
+
+
+

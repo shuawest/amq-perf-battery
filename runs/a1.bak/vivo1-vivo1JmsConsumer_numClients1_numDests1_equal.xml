@@ -1,0 +1,455 @@
+<testResult>
+<property name='testSystemSettings'>
+<props>
+<prop key='reportDir'>./target/</prop>
+<prop key='clientPrefix'>vivo1JmsConsumer</prop>
+<prop key='propsConfigFile'>src/main/resources/amqp-consumer.properties</prop>
+<prop key='reportType'>xml</prop>
+<prop key='spiClass'>org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory</prop>
+<prop key='destDistro'>equal</prop>
+<prop key='samplers'>tp</prop>
+<prop key='reportName'>null</prop>
+<prop key='numClients'>1</prop>
+<prop key='totalDests'>1</prop>
+</props>
+</property>
+<property name='jmsClientSettings'>
+<props>
+<prop key='messageSelector'>null</prop>
+<prop key='sessTransacted'>false</prop>
+<prop key='jmsVersion'>1.1</prop>
+<prop key='destComposite'>false</prop>
+<prop key='durable'>false</prop>
+<prop key='asyncRecv'>true</prop>
+<prop key='recvDelay'>0</prop>
+<prop key='recvDuration'>300000</prop>
+<prop key='recvCount'>1000000</prop>
+<prop key='recvType'>time</prop>
+<prop key='jmsProvider'>QpidJMS-0.5.0</prop>
+<prop key='destName'>queue://TEST.FOO</prop>
+<prop key='sessAckMode'>autoAck</prop>
+<prop key='unsubscribe'>true</prop>
+<prop key='jmsProperties'>JMSXUserID,JMSXGroupID,JMSXGroupSeq,JMSXDeliveryCount</prop>
+<prop key='commitAfterXMsgs'>1</prop>
+</props>
+</property>
+<property name='jmsFactorySettings'>
+<props>
+<prop key='redeliveryPolicy.maxRedeliveries'>-1</prop>
+<prop key='prefetchPolicy.durableTopicPrefetch'>1000</prop>
+<prop key='password'>admin</prop>
+<prop key='prefetchPolicy.queueBrowserPrefetch'>1000</prop>
+<prop key='localMessageExpiry'>true</prop>
+<prop key='validatePropertyNames'>true</prop>
+<prop key='sendTimeout'>-1</prop>
+<prop key='queuePrefix'>null</prop>
+<prop key='username'>admin</prop>
+<prop key='sendAcksAsync'>false</prop>
+<prop key='prefetchPolicy.topicPrefetch'>1000</prop>
+<prop key='localMessagePriority'>false</prop>
+<prop key='closeTimeout'>15000</prop>
+<prop key='alwaysSyncSend'>false</prop>
+<prop key='clientID'>null</prop>
+<prop key='prefetchPolicy.maxPrefetchSize'>1000</prop>
+<prop key='topicPrefix'>null</prop>
+<prop key='prefetchPolicy.queuePrefetch'>1000</prop>
+<prop key='connectTimeout'>15000</prop>
+<prop key='remoteURI'>amqp://vivo2.milab.joshwest.me:5672</prop>
+<prop key='forceAsyncSend'>true</prop>
+<prop key='clientIDPrefix'>null</prop>
+<prop key='requestTimeout'>-1</prop>
+</props>
+</property>
+<property name='jvmSettings'>
+<props>
+<prop key='java.runtime.name'>OpenJDK Runtime Environment</prop>
+<prop key='sun.boot.library.path'>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/amd64</prop>
+<prop key='java.vm.version'>25.282-b08</prop>
+<prop key='maven.multiModuleProjectDirectory'>/home/jowest/msgaas/amqp-perf-test</prop>
+<prop key='java.vm.vendor'>Red Hat, Inc.</prop>
+<prop key='java.vendor.url'>https://www.redhat.com/</prop>
+<prop key='guice.disable.misplaced.annotation.check'>true</prop>
+<prop key='path.separator'>:</prop>
+<prop key='java.vm.name'>OpenJDK 64-Bit Server VM</prop>
+<prop key='file.encoding.pkg'>sun.io</prop>
+<prop key='user.country'>US</prop>
+<prop key='sun.java.launcher'>SUN_STANDARD</prop>
+<prop key='sun.os.patch.level'>unknown</prop>
+<prop key='java.vm.specification.name'>Java Virtual Machine Specification</prop>
+<prop key='user.dir'>/home/jowest/msgaas/amqp-perf-test</prop>
+<prop key='java.runtime.version'>1.8.0_282-b08</prop>
+<prop key='java.awt.graphicsenv'>sun.awt.X11GraphicsEnvironment</prop>
+<prop key='java.endorsed.dirs'>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/endorsed</prop>
+<prop key='os.arch'>amd64</prop>
+<prop key='java.io.tmpdir'>/tmp</prop>
+<prop key='line.separator'>
+</prop>
+<prop key='java.vm.specification.vendor'>Oracle Corporation</prop>
+<prop key='os.name'>Linux</prop>
+<prop key='classworlds.conf'>/usr/share/maven/bin/m2.conf</prop>
+<prop key='sun.jnu.encoding'>UTF-8</prop>
+<prop key='java.library.path'>/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib</prop>
+<prop key='sun.nio.ch.bugLevel'></prop>
+<prop key='maven.conf'>/usr/share/maven/conf</prop>
+<prop key='java.specification.name'>Java Platform API Specification</prop>
+<prop key='java.class.version'>52.0</prop>
+<prop key='sun.management.compiler'>HotSpot 64-Bit Tiered Compilers</prop>
+<prop key='os.version'>4.18.0-240.el8.x86_64</prop>
+<prop key='library.jansi.path'>/usr/share/maven/lib/jansi-native</prop>
+<prop key='user.home'>/home/jowest</prop>
+<prop key='user.timezone'>America/New_York</prop>
+<prop key='java.awt.printerjob'>sun.print.PSPrinterJob</prop>
+<prop key='file.encoding'>UTF-8</prop>
+<prop key='java.specification.version'>1.8</prop>
+<prop key='java.class.path'>/usr/share/java/plexus-classworlds.jar</prop>
+<prop key='user.name'>jowest</prop>
+<prop key='java.vm.specification.version'>1.8</prop>
+<prop key='sun.java.command'>org.codehaus.plexus.classworlds.launcher.Launcher activemq-perf:consumer -DsysTest.propsConfigFile=src/main/resources/amqp-consumer.properties</prop>
+<prop key='java.home'>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre</prop>
+<prop key='sun.arch.data.model'>64</prop>
+<prop key='user.language'>en</prop>
+<prop key='java.specification.vendor'>Oracle Corporation</prop>
+<prop key='awt.toolkit'>sun.awt.X11.XToolkit</prop>
+<prop key='java.vm.info'>mixed mode</prop>
+<prop key='java.version'>1.8.0_282</prop>
+<prop key='java.ext.dirs'>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext</prop>
+<prop key='sun.boot.class.path'>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-2.el8_3.x86_64/jre/classes</prop>
+<prop key='java.vendor'>Red Hat, Inc.</prop>
+<prop key='maven.home'>/usr/share/maven</prop>
+<prop key='file.separator'>/</prop>
+<prop key='java.vendor.url.bug'>https://bugzilla.redhat.com/enter_bug.cgi?product=Red%20Hat%20Enterprise%20Linux%208&component=java-1.8.0-openjdk</prop>
+<prop key='sun.io.unicode.encoding'>UnicodeLittle</prop>
+<prop key='sun.cpu.endian'>little</prop>
+<prop key='sun.cpu.isalist'></prop>
+</props>
+</property>
+<property name='tpSamplerSettings'>
+<props>
+<prop key='interval'>1000</prop>
+<prop key='rampDownPercent'>0</prop>
+<prop key='rampUpPercent'>0</prop>
+</props>
+</property>
+<property name='performanceData'>
+<list>
+<tpdata index='0' clientName='vivo1JmsConsumer0' throughput='0' />
+<tpdata index='1' clientName='vivo1JmsConsumer0' throughput='0' />
+<tpdata index='2' clientName='vivo1JmsConsumer0' throughput='4068' />
+<tpdata index='3' clientName='vivo1JmsConsumer0' throughput='13169' />
+<tpdata index='4' clientName='vivo1JmsConsumer0' throughput='14791' />
+<tpdata index='5' clientName='vivo1JmsConsumer0' throughput='17375' />
+<tpdata index='6' clientName='vivo1JmsConsumer0' throughput='17590' />
+<tpdata index='7' clientName='vivo1JmsConsumer0' throughput='19793' />
+<tpdata index='8' clientName='vivo1JmsConsumer0' throughput='17133' />
+<tpdata index='9' clientName='vivo1JmsConsumer0' throughput='18958' />
+<tpdata index='10' clientName='vivo1JmsConsumer0' throughput='18576' />
+<tpdata index='11' clientName='vivo1JmsConsumer0' throughput='18272' />
+<tpdata index='12' clientName='vivo1JmsConsumer0' throughput='17778' />
+<tpdata index='13' clientName='vivo1JmsConsumer0' throughput='17329' />
+<tpdata index='14' clientName='vivo1JmsConsumer0' throughput='19097' />
+<tpdata index='15' clientName='vivo1JmsConsumer0' throughput='17950' />
+<tpdata index='16' clientName='vivo1JmsConsumer0' throughput='17887' />
+<tpdata index='17' clientName='vivo1JmsConsumer0' throughput='16871' />
+<tpdata index='18' clientName='vivo1JmsConsumer0' throughput='19396' />
+<tpdata index='19' clientName='vivo1JmsConsumer0' throughput='18273' />
+<tpdata index='20' clientName='vivo1JmsConsumer0' throughput='19489' />
+<tpdata index='21' clientName='vivo1JmsConsumer0' throughput='20117' />
+<tpdata index='22' clientName='vivo1JmsConsumer0' throughput='18625' />
+<tpdata index='23' clientName='vivo1JmsConsumer0' throughput='18848' />
+<tpdata index='24' clientName='vivo1JmsConsumer0' throughput='18215' />
+<tpdata index='25' clientName='vivo1JmsConsumer0' throughput='16843' />
+<tpdata index='26' clientName='vivo1JmsConsumer0' throughput='17212' />
+<tpdata index='27' clientName='vivo1JmsConsumer0' throughput='18153' />
+<tpdata index='28' clientName='vivo1JmsConsumer0' throughput='19007' />
+<tpdata index='29' clientName='vivo1JmsConsumer0' throughput='17695' />
+<tpdata index='30' clientName='vivo1JmsConsumer0' throughput='19480' />
+<tpdata index='31' clientName='vivo1JmsConsumer0' throughput='20268' />
+<tpdata index='32' clientName='vivo1JmsConsumer0' throughput='17327' />
+<tpdata index='33' clientName='vivo1JmsConsumer0' throughput='18122' />
+<tpdata index='34' clientName='vivo1JmsConsumer0' throughput='19246' />
+<tpdata index='35' clientName='vivo1JmsConsumer0' throughput='18914' />
+<tpdata index='36' clientName='vivo1JmsConsumer0' throughput='20105' />
+<tpdata index='37' clientName='vivo1JmsConsumer0' throughput='18170' />
+<tpdata index='38' clientName='vivo1JmsConsumer0' throughput='18821' />
+<tpdata index='39' clientName='vivo1JmsConsumer0' throughput='17697' />
+<tpdata index='40' clientName='vivo1JmsConsumer0' throughput='19716' />
+<tpdata index='41' clientName='vivo1JmsConsumer0' throughput='16704' />
+<tpdata index='42' clientName='vivo1JmsConsumer0' throughput='19892' />
+<tpdata index='43' clientName='vivo1JmsConsumer0' throughput='17907' />
+<tpdata index='44' clientName='vivo1JmsConsumer0' throughput='18861' />
+<tpdata index='45' clientName='vivo1JmsConsumer0' throughput='18764' />
+<tpdata index='46' clientName='vivo1JmsConsumer0' throughput='17999' />
+<tpdata index='47' clientName='vivo1JmsConsumer0' throughput='19481' />
+<tpdata index='48' clientName='vivo1JmsConsumer0' throughput='18618' />
+<tpdata index='49' clientName='vivo1JmsConsumer0' throughput='19855' />
+<tpdata index='50' clientName='vivo1JmsConsumer0' throughput='18863' />
+<tpdata index='51' clientName='vivo1JmsConsumer0' throughput='19474' />
+<tpdata index='52' clientName='vivo1JmsConsumer0' throughput='18453' />
+<tpdata index='53' clientName='vivo1JmsConsumer0' throughput='19493' />
+<tpdata index='54' clientName='vivo1JmsConsumer0' throughput='19690' />
+<tpdata index='55' clientName='vivo1JmsConsumer0' throughput='17140' />
+<tpdata index='56' clientName='vivo1JmsConsumer0' throughput='19051' />
+<tpdata index='57' clientName='vivo1JmsConsumer0' throughput='19908' />
+<tpdata index='58' clientName='vivo1JmsConsumer0' throughput='19198' />
+<tpdata index='59' clientName='vivo1JmsConsumer0' throughput='19671' />
+<tpdata index='60' clientName='vivo1JmsConsumer0' throughput='19103' />
+<tpdata index='61' clientName='vivo1JmsConsumer0' throughput='19242' />
+<tpdata index='62' clientName='vivo1JmsConsumer0' throughput='17230' />
+<tpdata index='63' clientName='vivo1JmsConsumer0' throughput='20669' />
+<tpdata index='64' clientName='vivo1JmsConsumer0' throughput='17097' />
+<tpdata index='65' clientName='vivo1JmsConsumer0' throughput='18012' />
+<tpdata index='66' clientName='vivo1JmsConsumer0' throughput='18691' />
+<tpdata index='67' clientName='vivo1JmsConsumer0' throughput='19894' />
+<tpdata index='68' clientName='vivo1JmsConsumer0' throughput='18350' />
+<tpdata index='69' clientName='vivo1JmsConsumer0' throughput='18996' />
+<tpdata index='70' clientName='vivo1JmsConsumer0' throughput='19322' />
+<tpdata index='71' clientName='vivo1JmsConsumer0' throughput='17560' />
+<tpdata index='72' clientName='vivo1JmsConsumer0' throughput='17818' />
+<tpdata index='73' clientName='vivo1JmsConsumer0' throughput='19812' />
+<tpdata index='74' clientName='vivo1JmsConsumer0' throughput='16884' />
+<tpdata index='75' clientName='vivo1JmsConsumer0' throughput='19307' />
+<tpdata index='76' clientName='vivo1JmsConsumer0' throughput='18198' />
+<tpdata index='77' clientName='vivo1JmsConsumer0' throughput='19783' />
+<tpdata index='78' clientName='vivo1JmsConsumer0' throughput='19535' />
+<tpdata index='79' clientName='vivo1JmsConsumer0' throughput='19268' />
+<tpdata index='80' clientName='vivo1JmsConsumer0' throughput='19751' />
+<tpdata index='81' clientName='vivo1JmsConsumer0' throughput='18535' />
+<tpdata index='82' clientName='vivo1JmsConsumer0' throughput='17796' />
+<tpdata index='83' clientName='vivo1JmsConsumer0' throughput='20288' />
+<tpdata index='84' clientName='vivo1JmsConsumer0' throughput='17744' />
+<tpdata index='85' clientName='vivo1JmsConsumer0' throughput='16839' />
+<tpdata index='86' clientName='vivo1JmsConsumer0' throughput='18758' />
+<tpdata index='87' clientName='vivo1JmsConsumer0' throughput='17914' />
+<tpdata index='88' clientName='vivo1JmsConsumer0' throughput='16205' />
+<tpdata index='89' clientName='vivo1JmsConsumer0' throughput='17628' />
+<tpdata index='90' clientName='vivo1JmsConsumer0' throughput='19132' />
+<tpdata index='91' clientName='vivo1JmsConsumer0' throughput='18027' />
+<tpdata index='92' clientName='vivo1JmsConsumer0' throughput='19794' />
+<tpdata index='93' clientName='vivo1JmsConsumer0' throughput='19763' />
+<tpdata index='94' clientName='vivo1JmsConsumer0' throughput='16850' />
+<tpdata index='95' clientName='vivo1JmsConsumer0' throughput='19518' />
+<tpdata index='96' clientName='vivo1JmsConsumer0' throughput='18949' />
+<tpdata index='97' clientName='vivo1JmsConsumer0' throughput='19334' />
+<tpdata index='98' clientName='vivo1JmsConsumer0' throughput='16870' />
+<tpdata index='99' clientName='vivo1JmsConsumer0' throughput='19594' />
+<tpdata index='100' clientName='vivo1JmsConsumer0' throughput='17400' />
+<tpdata index='101' clientName='vivo1JmsConsumer0' throughput='19148' />
+<tpdata index='102' clientName='vivo1JmsConsumer0' throughput='17069' />
+<tpdata index='103' clientName='vivo1JmsConsumer0' throughput='18075' />
+<tpdata index='104' clientName='vivo1JmsConsumer0' throughput='18685' />
+<tpdata index='105' clientName='vivo1JmsConsumer0' throughput='17894' />
+<tpdata index='106' clientName='vivo1JmsConsumer0' throughput='19222' />
+<tpdata index='107' clientName='vivo1JmsConsumer0' throughput='15855' />
+<tpdata index='108' clientName='vivo1JmsConsumer0' throughput='17298' />
+<tpdata index='109' clientName='vivo1JmsConsumer0' throughput='18660' />
+<tpdata index='110' clientName='vivo1JmsConsumer0' throughput='15501' />
+<tpdata index='111' clientName='vivo1JmsConsumer0' throughput='18522' />
+<tpdata index='112' clientName='vivo1JmsConsumer0' throughput='18974' />
+<tpdata index='113' clientName='vivo1JmsConsumer0' throughput='19661' />
+<tpdata index='114' clientName='vivo1JmsConsumer0' throughput='19708' />
+<tpdata index='115' clientName='vivo1JmsConsumer0' throughput='18718' />
+<tpdata index='116' clientName='vivo1JmsConsumer0' throughput='18697' />
+<tpdata index='117' clientName='vivo1JmsConsumer0' throughput='17911' />
+<tpdata index='118' clientName='vivo1JmsConsumer0' throughput='19513' />
+<tpdata index='119' clientName='vivo1JmsConsumer0' throughput='20210' />
+<tpdata index='120' clientName='vivo1JmsConsumer0' throughput='19001' />
+<tpdata index='121' clientName='vivo1JmsConsumer0' throughput='20215' />
+<tpdata index='122' clientName='vivo1JmsConsumer0' throughput='18798' />
+<tpdata index='123' clientName='vivo1JmsConsumer0' throughput='19495' />
+<tpdata index='124' clientName='vivo1JmsConsumer0' throughput='18350' />
+<tpdata index='125' clientName='vivo1JmsConsumer0' throughput='20434' />
+<tpdata index='126' clientName='vivo1JmsConsumer0' throughput='17188' />
+<tpdata index='127' clientName='vivo1JmsConsumer0' throughput='18736' />
+<tpdata index='128' clientName='vivo1JmsConsumer0' throughput='20359' />
+<tpdata index='129' clientName='vivo1JmsConsumer0' throughput='18454' />
+<tpdata index='130' clientName='vivo1JmsConsumer0' throughput='19326' />
+<tpdata index='131' clientName='vivo1JmsConsumer0' throughput='16697' />
+<tpdata index='132' clientName='vivo1JmsConsumer0' throughput='18879' />
+<tpdata index='133' clientName='vivo1JmsConsumer0' throughput='17769' />
+<tpdata index='134' clientName='vivo1JmsConsumer0' throughput='18728' />
+<tpdata index='135' clientName='vivo1JmsConsumer0' throughput='19402' />
+<tpdata index='136' clientName='vivo1JmsConsumer0' throughput='19376' />
+<tpdata index='137' clientName='vivo1JmsConsumer0' throughput='16906' />
+<tpdata index='138' clientName='vivo1JmsConsumer0' throughput='18271' />
+<tpdata index='139' clientName='vivo1JmsConsumer0' throughput='17587' />
+<tpdata index='140' clientName='vivo1JmsConsumer0' throughput='19359' />
+<tpdata index='141' clientName='vivo1JmsConsumer0' throughput='20774' />
+<tpdata index='142' clientName='vivo1JmsConsumer0' throughput='18675' />
+<tpdata index='143' clientName='vivo1JmsConsumer0' throughput='18471' />
+<tpdata index='144' clientName='vivo1JmsConsumer0' throughput='18922' />
+<tpdata index='145' clientName='vivo1JmsConsumer0' throughput='17048' />
+<tpdata index='146' clientName='vivo1JmsConsumer0' throughput='17540' />
+<tpdata index='147' clientName='vivo1JmsConsumer0' throughput='15842' />
+<tpdata index='148' clientName='vivo1JmsConsumer0' throughput='16953' />
+<tpdata index='149' clientName='vivo1JmsConsumer0' throughput='17853' />
+<tpdata index='150' clientName='vivo1JmsConsumer0' throughput='19644' />
+<tpdata index='151' clientName='vivo1JmsConsumer0' throughput='18972' />
+<tpdata index='152' clientName='vivo1JmsConsumer0' throughput='17936' />
+<tpdata index='153' clientName='vivo1JmsConsumer0' throughput='18356' />
+<tpdata index='154' clientName='vivo1JmsConsumer0' throughput='20225' />
+<tpdata index='155' clientName='vivo1JmsConsumer0' throughput='19025' />
+<tpdata index='156' clientName='vivo1JmsConsumer0' throughput='19044' />
+<tpdata index='157' clientName='vivo1JmsConsumer0' throughput='18604' />
+<tpdata index='158' clientName='vivo1JmsConsumer0' throughput='16498' />
+<tpdata index='159' clientName='vivo1JmsConsumer0' throughput='17940' />
+<tpdata index='160' clientName='vivo1JmsConsumer0' throughput='17911' />
+<tpdata index='161' clientName='vivo1JmsConsumer0' throughput='19746' />
+<tpdata index='162' clientName='vivo1JmsConsumer0' throughput='20076' />
+<tpdata index='163' clientName='vivo1JmsConsumer0' throughput='19614' />
+<tpdata index='164' clientName='vivo1JmsConsumer0' throughput='19191' />
+<tpdata index='165' clientName='vivo1JmsConsumer0' throughput='18871' />
+<tpdata index='166' clientName='vivo1JmsConsumer0' throughput='19467' />
+<tpdata index='167' clientName='vivo1JmsConsumer0' throughput='19991' />
+<tpdata index='168' clientName='vivo1JmsConsumer0' throughput='18893' />
+<tpdata index='169' clientName='vivo1JmsConsumer0' throughput='19577' />
+<tpdata index='170' clientName='vivo1JmsConsumer0' throughput='19495' />
+<tpdata index='171' clientName='vivo1JmsConsumer0' throughput='18142' />
+<tpdata index='172' clientName='vivo1JmsConsumer0' throughput='19216' />
+<tpdata index='173' clientName='vivo1JmsConsumer0' throughput='20149' />
+<tpdata index='174' clientName='vivo1JmsConsumer0' throughput='19998' />
+<tpdata index='175' clientName='vivo1JmsConsumer0' throughput='20729' />
+<tpdata index='176' clientName='vivo1JmsConsumer0' throughput='16881' />
+<tpdata index='177' clientName='vivo1JmsConsumer0' throughput='20202' />
+<tpdata index='178' clientName='vivo1JmsConsumer0' throughput='20044' />
+<tpdata index='179' clientName='vivo1JmsConsumer0' throughput='19110' />
+<tpdata index='180' clientName='vivo1JmsConsumer0' throughput='17937' />
+<tpdata index='181' clientName='vivo1JmsConsumer0' throughput='18833' />
+<tpdata index='182' clientName='vivo1JmsConsumer0' throughput='19667' />
+<tpdata index='183' clientName='vivo1JmsConsumer0' throughput='19390' />
+<tpdata index='184' clientName='vivo1JmsConsumer0' throughput='19120' />
+<tpdata index='185' clientName='vivo1JmsConsumer0' throughput='18769' />
+<tpdata index='186' clientName='vivo1JmsConsumer0' throughput='20257' />
+<tpdata index='187' clientName='vivo1JmsConsumer0' throughput='19092' />
+<tpdata index='188' clientName='vivo1JmsConsumer0' throughput='16629' />
+<tpdata index='189' clientName='vivo1JmsConsumer0' throughput='20263' />
+<tpdata index='190' clientName='vivo1JmsConsumer0' throughput='20383' />
+<tpdata index='191' clientName='vivo1JmsConsumer0' throughput='20682' />
+<tpdata index='192' clientName='vivo1JmsConsumer0' throughput='19036' />
+<tpdata index='193' clientName='vivo1JmsConsumer0' throughput='18905' />
+<tpdata index='194' clientName='vivo1JmsConsumer0' throughput='19209' />
+<tpdata index='195' clientName='vivo1JmsConsumer0' throughput='19273' />
+<tpdata index='196' clientName='vivo1JmsConsumer0' throughput='17800' />
+<tpdata index='197' clientName='vivo1JmsConsumer0' throughput='18181' />
+<tpdata index='198' clientName='vivo1JmsConsumer0' throughput='17973' />
+<tpdata index='199' clientName='vivo1JmsConsumer0' throughput='16762' />
+<tpdata index='200' clientName='vivo1JmsConsumer0' throughput='18839' />
+<tpdata index='201' clientName='vivo1JmsConsumer0' throughput='16689' />
+<tpdata index='202' clientName='vivo1JmsConsumer0' throughput='16277' />
+<tpdata index='203' clientName='vivo1JmsConsumer0' throughput='18662' />
+<tpdata index='204' clientName='vivo1JmsConsumer0' throughput='16508' />
+<tpdata index='205' clientName='vivo1JmsConsumer0' throughput='17498' />
+<tpdata index='206' clientName='vivo1JmsConsumer0' throughput='18436' />
+<tpdata index='207' clientName='vivo1JmsConsumer0' throughput='17783' />
+<tpdata index='208' clientName='vivo1JmsConsumer0' throughput='19729' />
+<tpdata index='209' clientName='vivo1JmsConsumer0' throughput='19156' />
+<tpdata index='210' clientName='vivo1JmsConsumer0' throughput='18188' />
+<tpdata index='211' clientName='vivo1JmsConsumer0' throughput='18146' />
+<tpdata index='212' clientName='vivo1JmsConsumer0' throughput='17844' />
+<tpdata index='213' clientName='vivo1JmsConsumer0' throughput='19022' />
+<tpdata index='214' clientName='vivo1JmsConsumer0' throughput='19527' />
+<tpdata index='215' clientName='vivo1JmsConsumer0' throughput='20104' />
+<tpdata index='216' clientName='vivo1JmsConsumer0' throughput='19692' />
+<tpdata index='217' clientName='vivo1JmsConsumer0' throughput='18597' />
+<tpdata index='218' clientName='vivo1JmsConsumer0' throughput='17538' />
+<tpdata index='219' clientName='vivo1JmsConsumer0' throughput='18262' />
+<tpdata index='220' clientName='vivo1JmsConsumer0' throughput='16462' />
+<tpdata index='221' clientName='vivo1JmsConsumer0' throughput='16182' />
+<tpdata index='222' clientName='vivo1JmsConsumer0' throughput='18648' />
+<tpdata index='223' clientName='vivo1JmsConsumer0' throughput='17440' />
+<tpdata index='224' clientName='vivo1JmsConsumer0' throughput='17611' />
+<tpdata index='225' clientName='vivo1JmsConsumer0' throughput='18680' />
+<tpdata index='226' clientName='vivo1JmsConsumer0' throughput='20159' />
+<tpdata index='227' clientName='vivo1JmsConsumer0' throughput='16963' />
+<tpdata index='228' clientName='vivo1JmsConsumer0' throughput='18914' />
+<tpdata index='229' clientName='vivo1JmsConsumer0' throughput='17464' />
+<tpdata index='230' clientName='vivo1JmsConsumer0' throughput='18540' />
+<tpdata index='231' clientName='vivo1JmsConsumer0' throughput='18767' />
+<tpdata index='232' clientName='vivo1JmsConsumer0' throughput='18320' />
+<tpdata index='233' clientName='vivo1JmsConsumer0' throughput='17466' />
+<tpdata index='234' clientName='vivo1JmsConsumer0' throughput='19026' />
+<tpdata index='235' clientName='vivo1JmsConsumer0' throughput='18978' />
+<tpdata index='236' clientName='vivo1JmsConsumer0' throughput='18914' />
+<tpdata index='237' clientName='vivo1JmsConsumer0' throughput='19227' />
+<tpdata index='238' clientName='vivo1JmsConsumer0' throughput='17430' />
+<tpdata index='239' clientName='vivo1JmsConsumer0' throughput='19171' />
+<tpdata index='240' clientName='vivo1JmsConsumer0' throughput='18333' />
+<tpdata index='241' clientName='vivo1JmsConsumer0' throughput='16909' />
+<tpdata index='242' clientName='vivo1JmsConsumer0' throughput='19546' />
+<tpdata index='243' clientName='vivo1JmsConsumer0' throughput='19893' />
+<tpdata index='244' clientName='vivo1JmsConsumer0' throughput='17685' />
+<tpdata index='245' clientName='vivo1JmsConsumer0' throughput='19455' />
+<tpdata index='246' clientName='vivo1JmsConsumer0' throughput='18984' />
+<tpdata index='247' clientName='vivo1JmsConsumer0' throughput='19135' />
+<tpdata index='248' clientName='vivo1JmsConsumer0' throughput='19791' />
+<tpdata index='249' clientName='vivo1JmsConsumer0' throughput='20279' />
+<tpdata index='250' clientName='vivo1JmsConsumer0' throughput='18882' />
+<tpdata index='251' clientName='vivo1JmsConsumer0' throughput='18114' />
+<tpdata index='252' clientName='vivo1JmsConsumer0' throughput='19340' />
+<tpdata index='253' clientName='vivo1JmsConsumer0' throughput='19881' />
+<tpdata index='254' clientName='vivo1JmsConsumer0' throughput='19701' />
+<tpdata index='255' clientName='vivo1JmsConsumer0' throughput='18353' />
+<tpdata index='256' clientName='vivo1JmsConsumer0' throughput='18540' />
+<tpdata index='257' clientName='vivo1JmsConsumer0' throughput='18740' />
+<tpdata index='258' clientName='vivo1JmsConsumer0' throughput='17190' />
+<tpdata index='259' clientName='vivo1JmsConsumer0' throughput='19297' />
+<tpdata index='260' clientName='vivo1JmsConsumer0' throughput='17872' />
+<tpdata index='261' clientName='vivo1JmsConsumer0' throughput='18614' />
+<tpdata index='262' clientName='vivo1JmsConsumer0' throughput='20261' />
+<tpdata index='263' clientName='vivo1JmsConsumer0' throughput='19274' />
+<tpdata index='264' clientName='vivo1JmsConsumer0' throughput='19796' />
+<tpdata index='265' clientName='vivo1JmsConsumer0' throughput='17769' />
+<tpdata index='266' clientName='vivo1JmsConsumer0' throughput='18181' />
+<tpdata index='267' clientName='vivo1JmsConsumer0' throughput='19331' />
+<tpdata index='268' clientName='vivo1JmsConsumer0' throughput='18860' />
+<tpdata index='269' clientName='vivo1JmsConsumer0' throughput='17991' />
+<tpdata index='270' clientName='vivo1JmsConsumer0' throughput='18264' />
+<tpdata index='271' clientName='vivo1JmsConsumer0' throughput='18379' />
+<tpdata index='272' clientName='vivo1JmsConsumer0' throughput='18520' />
+<tpdata index='273' clientName='vivo1JmsConsumer0' throughput='19313' />
+<tpdata index='274' clientName='vivo1JmsConsumer0' throughput='16885' />
+<tpdata index='275' clientName='vivo1JmsConsumer0' throughput='18556' />
+<tpdata index='276' clientName='vivo1JmsConsumer0' throughput='19876' />
+<tpdata index='277' clientName='vivo1JmsConsumer0' throughput='17729' />
+<tpdata index='278' clientName='vivo1JmsConsumer0' throughput='18015' />
+<tpdata index='279' clientName='vivo1JmsConsumer0' throughput='18070' />
+<tpdata index='280' clientName='vivo1JmsConsumer0' throughput='19284' />
+<tpdata index='281' clientName='vivo1JmsConsumer0' throughput='19828' />
+<tpdata index='282' clientName='vivo1JmsConsumer0' throughput='19994' />
+<tpdata index='283' clientName='vivo1JmsConsumer0' throughput='19985' />
+<tpdata index='284' clientName='vivo1JmsConsumer0' throughput='17467' />
+<tpdata index='285' clientName='vivo1JmsConsumer0' throughput='16254' />
+<tpdata index='286' clientName='vivo1JmsConsumer0' throughput='18172' />
+<tpdata index='287' clientName='vivo1JmsConsumer0' throughput='18929' />
+<tpdata index='288' clientName='vivo1JmsConsumer0' throughput='18005' />
+<tpdata index='289' clientName='vivo1JmsConsumer0' throughput='17781' />
+<tpdata index='290' clientName='vivo1JmsConsumer0' throughput='17040' />
+<tpdata index='291' clientName='vivo1JmsConsumer0' throughput='16338' />
+<tpdata index='292' clientName='vivo1JmsConsumer0' throughput='18336' />
+<tpdata index='293' clientName='vivo1JmsConsumer0' throughput='19351' />
+<tpdata index='294' clientName='vivo1JmsConsumer0' throughput='19363' />
+<tpdata index='295' clientName='vivo1JmsConsumer0' throughput='17004' />
+<tpdata index='296' clientName='vivo1JmsConsumer0' throughput='18937' />
+<tpdata index='297' clientName='vivo1JmsConsumer0' throughput='18442' />
+<tpdata index='298' clientName='vivo1JmsConsumer0' throughput='19870' />
+<tpdata index='299' clientName='vivo1JmsConsumer0' throughput='17883' />
+</list>
+</property>
+<property name='perfTpSummary'>
+<props>
+<prop key='SystemTotalTP'>5522021</prop>
+<prop key='SystemTotalClients'>1</prop>
+<prop key='SystemAveTP'>18406.736666666668</prop>
+<prop key='SystemAveEMMTP'>18337.49</prop>
+<prop key='SystemAveClientTP'>18406.736666666668</prop>
+<prop key='SystemAveClientEMMTP'>18337.49</prop>
+<prop key='MinClientTP'>clientName=vivo1JmsConsumer0,value=0</prop>
+<prop key='MaxClientTP'>clientName=vivo1JmsConsumer0,value=20774</prop>
+<prop key='MinClientTotalTP'>clientName=vivo1JmsConsumer0,value=5522021</prop>
+<prop key='MaxClientTotalTP'>clientName=vivo1JmsConsumer0,value=5522021</prop>
+<prop key='MinClientAveTP'>clientName=vivo1JmsConsumer0,value=18406.736666666668</prop>
+<prop key='MaxClientAveTP'>clientName=vivo1JmsConsumer0,value=18406.736666666668</prop>
+<prop key='MinClientAveEMMTP'>clientName=vivo1JmsConsumer0,value=18337.49</prop>
+<prop key='MaxClientAveEMMTP'>clientName=vivo1JmsConsumer0,value=18337.49</prop>
+</props>
+</property>
+</testResult>

@@ -1,0 +1,53 @@
+---
+
+- name: Fetching results for client
+  debug:
+    msg:
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "client_name: {{client_name}}"
+
+- name: Fetch the producer.log log to the run
+  fetch:
+    src: "{{amq_perf_test_path}}/target/{{client_name}}-producer.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{client_name}}-producer.log"
+    flat: yes
+    fail_on_missing: no
+
+- name: Fetch the generated producer config to the run
+  fetch:
+    src: "{{amq_perf_test_path}}/src/main/resources/{{client_name}}-amqp-producer.properties"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{client_name}}-amqp-producer.properties"
+    flat: yes
+    fail_on_missing: no
+
+
+- name: Fetch the consumer.log log to the run
+  fetch:
+    src: "{{amq_perf_test_path}}/target/{{client_name}}-consumer.log"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{client_name}}-consumer.log"
+    flat: yes
+    fail_on_missing: no
+
+- name: Fetch the generated consumer config to the run
+  fetch:
+    src: "{{amq_perf_test_path}}/src/main/resources/{{client_name}}-amqp-consumer.properties"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{client_name}}-amqp-consumer.properties"
+    flat: yes
+    fail_on_missing: no
+
+
+- name: Gather list of result report files  
+  args:
+    chdir: "{{amq_perf_test_path}}/target/"
+  shell: |
+    find . -maxdepth 1 -type f | grep .xml | cut -d '/' -f2
+  register: result_reports
+
+- name: Fetch the restuls xml log for the run
+  with_items: "{{result_reports.stdout_lines}}"
+  fetch:
+    src: "{{amq_perf_test_path}}/target/{{item}}"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{client_name}}-{{item}}"
+    flat: yes
+    fail_on_missing: no
+

@@ -30,8 +30,8 @@ amq_port_offset: 0
 amq_web_port: 8161
 amq_amqp_port: 5672
 amq_core_port: 61616
-amq_broker_heap_min: 8G
-amq_broker_heap_max: 8G
+amq_broker_heap_min: 2G
+amq_broker_heap_max: 2G
 
 tcpSendBufferSize: 1048576
 tcpReceiveBufferSize: 1048576

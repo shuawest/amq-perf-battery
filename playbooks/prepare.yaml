@@ -1,0 +1,23 @@
+---
+
+# Prepare the environment for running a battery of performance tests
+
+- hosts: broker_hosts
+  gather_facts: yes
+  tasks: 
+    - name: Clean broker host {{ansible_host}}
+      include_role:
+        name: amqbroker
+        tasks_from: clean.yaml
+    - name: Prepare broker host {{ansible_host}}
+      include_role:
+        name: amqbroker
+        tasks_from: prereqs.yaml
+
+- hosts: client_hosts 
+  gather_facts: yes
+  tasks: 
+    - name: Setup host, clean existing processes, and install perf client on {{ansible_host}}
+      include_role:
+        name: amqp-perf
+        tasks_from: prereqs.yaml    

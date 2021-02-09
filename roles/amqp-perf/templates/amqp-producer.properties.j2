@@ -1,0 +1,47 @@
+factory.remoteURI={{connection_string}}
+factory.username={{amq_broker_user}}
+factory.password={{amq_broker_pass}}
+factory.forceAsyncSend={{perf_factory_forceAsynSend}}
+#factory.forceSyncSend={{perf_factory_forceSyncSend}}
+#factory.forceAsyncAcks={{perf_factory_forceAsyncAcks}}
+factory.prefetchPolicy.queuePrefetch={{perf_factory_queuePrefetch}}
+factory.prefetchPolicy.durableTopicPrefetch={{perf_factory_durableTopicPrefetch}}
+factory.prefetchPolicy.maxPrefetchSize={{perf_factory_maxPrefetchSize}}
+#factory.presettlePolicy.presettleAll={{perf_factory_presettleAll}}
+
+sysTest.clientPrefix={{client_name}}JmsProducer
+
+#sysTest.reportType=xml    # xml or verbose
+sysTest.reportDir=./target/
+sysTest.samplers={{perf_samplers}}
+sysTest.spiClass={{perf_spi}}
+
+sysTest.destDistro={{perf_destDistro}}
+producer.destComposite={{perf_destComposite}}
+producer.destName={{perf_destName}}
+producer.createNewMsg=false
+
+# ‘time’ - keep sending messages until a specific interval of time elapses. 
+# ‘count’ - keep sending messages until N messages has been sent.
+producer.sendType={{perf_producer_sendType}}
+producer.sendDuration={{perf_producer_sendDuration}}
+#producer.sendCount={{perf_producer_sendCount}}
+
+# Tunables
+# ‘nonpersistent’ - use non-persistent delivery mode. javax.jms.DeliveryMode.NON_PERSISTENT. 
+# ‘persistent’ - use persistent delivery mode. javax.jms.DeliveryMode.PERSISTENT.
+producer.deliveryMode={{perf_producer_deliveryMode}}
+producer.messageSize={{perf_producer_messageSize}}
+sysTest.numClients={{perf_producer_clients}}
+sysTest.totalDests={{perf_producer_dest_count}}
+producer.sessTransacted={{perf_producer_sessTransacted}}
+producer.commitAfterXMsgs={{perf_producer_commitAfterXMsgs}}
+
+# ‘autoAck’ - Session.AUTO_ACKNOWLEDGE. 
+# ‘clientAck’ - Session.CLIENT_ACKNOWLEDGE. 
+# ‘dupsAck’ - Session.DUPS_OK_ACKNOWLEDGE. 
+# ‘transacted’ - Session.TRANSACTED
+producer.sessAckMode={{perf_producer_sessAckMode}}  
+
+
+

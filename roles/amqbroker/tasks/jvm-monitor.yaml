@@ -1,0 +1,15 @@
+---
+
+# https://dzone.com/articles/jvm-statistics-with-jstat  
+# http://www.kubrynski.com/2015/03/using-jstat-to-report-custom-jvm-metrics.html
+# https://docs.oracle.com/javase/7/docs/technotes/tools/share/jstat.html
+
+# curl -X POST -H 'User-Agent: activemq-artemis-management' -H 'Content-Type: application/json' -H 'Origin: http://localhost/' \
+#    'http://{{local_continuity_user}}:{{local_continuity_pass}}@{{broker_jolokia_url}}/exec/org.apache.activemq.artemis:broker="{{broker_name}}",component=continuity,name="continuity.service"/activateSite(java.lang.Long)' \
+#    -d '{"type":"EXEC","mbean":"org.apache.activemq.artemis:broker=\"{{broker_name}}\",component=continuity,name=\"continuity.service\"","operation":"activateSite(java.lang.Long)","arguments":[{{activate_timeout}}]}'
+
+# https://jolokia.org/reference/html/protocol.html#read
+
+# Read queue info
+# curl 'http://admin:admin@vivo2.milab.joshwest.me:8161/console/jolokia/read/org.apache.activemq.artemis:broker="sharedstore_master_1",component=addresses,address="TEST.FOO",subcomponent=queues,routing-type="anycast",queue="TEST.FOO"
+

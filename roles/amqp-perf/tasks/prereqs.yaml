@@ -1,0 +1,32 @@
+---
+
+
+- name: Force kill all perf-battery processes
+  ignore_errors: true
+  shell: |
+    jps -mlvV | grep {{amq_perf_test_path}} | awk '{print $1}' | xargs kill -9
+  
+- name: Install prerequisite packages
+  become: yes
+  vars:
+    packages:
+    - java-1.8.0-openjdk
+    - java-1.8.0-openjdk-devel
+    - unzip
+    - maven
+    - git
+  dnf:
+    name: "{{ packages }}"
+    state: present
+
+- name: Copy amqp-perf-test harness to host
+  copy: 
+    src: "{{amq_perf_test_src}}"
+    dest: "{{amq_root}}/"
+  
+- name: Build amqp-perf-test
+  args:
+    chdir: "{{amq_perf_test_path}}"
+  shell: |
+    mvn clean install
+

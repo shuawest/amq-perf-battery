@@ -1,0 +1,13 @@
+---
+
+- import_playbook: prepare.yaml
+
+- hosts: all
+  tasks:
+
+    - name: For each run
+      with_items: "{{battery.runs}}"
+      loop_control:
+        loop_var: runid
+      include: run.yaml
+

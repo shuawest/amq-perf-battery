@@ -1,0 +1,172 @@
+---
+
+- name: set run facts for all hosts
+  set_fact:
+    run: "{{battery.runs[runid]}}"
+    amq_battery_run_id: "{{runid}}"
+    amq_cluster_type: "{{battery.brokercluster.model}}"
+    connection_string: "{{battery.brokercluster.connection}}"
+
+# - name: debug run
+#   debug:
+#     msg: 
+#       - "host: {{ansible_hostname}}"
+#       - "runid: {{runid}}"
+#       - "amq_battery_run_id: {{amq_battery_run_id}}"
+#       - "amq_cluster_type: {{amq_cluster_type}}"
+#       - "connection_string: {{connection_string}}"
+#       - "producers: {{battery.clients | selectattr('role','equalto','producer')}}"
+#       - "consumers: {{battery.clients | selectattr('role','equalto','consumer')}}"
+
+- name: configure broker(s)
+  with_items: "{{battery.brokercluster.instances}}"
+  loop_control:
+    loop_var: broker
+  vars:
+    amq_instance: "{{battery.brokercluster.instances[broker]}}"
+    amq_host: "{{amq_instance.hostname}}"
+    amq_broker_cluster_index: "{{amq_instance.index}}"
+    amq_cluster_instance: "{{amq_instance.role}}"
+    amq_port_offset: "{{amq_instance.offset}}"
+    amq_broker_heap_min: "{{run.broker_heap}}"
+    amq_broker_heap_max: "{{run.broker_heap}}"
+    amq_globalMaxSize: "{{run.broker_max_size}}"
+    amq_journalDeviceBlockSize: "{{run.journalDeviceBlockSize}}"
+    amq_pageSyncTimeout: "{{run.pageSyncTimeout}}"
+    amq_diskScanPeriod: "{{run.diskScanPeriod}}"
+    amq_journalMaxIo: "{{run.journalMaxIo}}"
+    amq_journalBufferTimeout: "{{run.journalBufferTimeout}}"
+    amq_journalDatasync: "{{run.journalDatasync}}"
+    amq_journalMinFiles: "{{run.journalMinFiles}}"
+    amq_journalPoolFiles: "{{run.journalPoolFiles}}"
+    amq_journalFileSize: "{{run.journalFileSize}}"
+    amq_journalType: "{{run.journalType}}"
+    amq_storage_mode: "{{run.storage_mode}}"
+    amq_address_full_policy: "{{run.address_full_policy}}"
+  when: ansible_hostname == battery.brokercluster.instances[broker].host
+  include_role:
+    name: amqbroker
+    tasks_from: start.yaml   
+  # debug:
+  #   msg: 
+  #     - "amq_battery_run_id: {{amq_battery_run_id}}"
+  #     - "amq_cluster_type: {{amq_cluster_type}}"
+  #     - "amq_host: {{amq_host}}"
+  #     - "amq_broker_cluster_index: {{amq_broker_cluster_index}}"
+  #     - "amq_cluster_instance: {{amq_cluster_instance}}"
+  #     - "amq_port_offset: {{amq_port_offset}}"
+  #     - "amq_broker_heap_min: {{amq_broker_heap_min}}"
+  #     - "amq_broker_heap_max: {{amq_broker_heap_max}}"
+  #     - "amq_globalMaxSize: {{amq_globalMaxSize}}"
+  #     - "amq_journalDeviceBlockSize: {{amq_journalDeviceBlockSize}}"
+  #     - "amq_pageSyncTimeout: {{amq_pageSyncTimeout}}"
+  #     - "amq_diskScanPeriod: {{amq_diskScanPeriod}}"
+  #     - "amq_journalMaxIo: {{amq_journalMaxIo}}"
+  #     - "amq_journalBufferTimeout: {{amq_journalBufferTimeout}}"
+  #     - "amq_journalDatasync: {{amq_journalDatasync}}"
+  #     - "amq_journalMinFiles: {{amq_journalMinFiles}}"
+  #     - "amq_journalPoolFiles: {{amq_journalPoolFiles}}"
+  #     - "amq_journalFileSize: {{amq_journalFileSize}}"
+  #     - "amq_journalType: {{amq_journalType}}"
+  #     - "amq_storage_mode: {{amq_storage_mode}}"
+  #     - "amq_address_full_policy: {{amq_address_full_policy}}"
+
+- name: configure consumers
+  with_items: "{{battery.clients | selectattr('role','equalto','consumer')}}"
+  loop_control:
+    loop_var: consumer
+  vars:
+    client_name: "{{runid}}-{{consumer.clientid}}"
+    perf_destName: "{{consumer.dest}}"
+    perf_consumer_heap_min: "{{run.consumer_heap}}"
+    perf_consumer_heap_max: "{{run.consumer_heap}}"
+    perf_consumer_clients: "{{run.consumer_threads}}"
+    perf_consumer_sessTransacted: "{{run.transacted}}"
+    perf_consumer_sessAckMode: "{{run.consumer_ack_mode}}"
+  when: ansible_hostname == consumer.host
+  include_role:
+    name: amqp-perf
+    tasks_from: perf-consumer.yaml
+  # debug:
+  #   msg:
+  #     - "amq_battery_run_id: {{amq_battery_run_id}}"
+  #     - "connection_string: {{connection_string}}"
+  #     - "client_name: {{client_name}}"
+  #     - "perf_destName: {{perf_destName}}"
+  #     - "perf_consumer_heap_min: {{perf_consumer_heap_min}}"
+  #     - "perf_consumer_heap_max: {{perf_consumer_heap_max}}"
+  #     - "perf_consumer_clients: {{perf_consumer_clients}}"
+  #     - "perf_consumer_sessTransacted: {{perf_consumer_sessTransacted}}"
+  #     - "perf_consumer_sessAckMode: {{perf_consumer_sessAckMode}}"
+
+- name: configure producers
+  with_items: "{{battery.clients | selectattr('role','equalto','producer')}}"
+  loop_control:
+    loop_var: producer
+  vars:
+    client_name: "{{runid}}-{{producer.clientid}}"
+    perf_destName: "{{producer.dest}}"
+    perf_producer_messageSize: "{{run.messageSize}}"
+    perf_producer_heap_min: "{{run.producer_heap}}"
+    perf_producer_heap_max: "{{run.producer_heap}}"
+    perf_producer_clients: "{{run.producer_threads}}"
+    perf_producer_sessTransacted: "{{run.transacted}}"
+    perf_producer_sessAckMode: "{{run.producer_ack_mode}}"
+    perf_producer_deliveryMode: "{{run.mode}}" 
+  when: ansible_hostname == producer.host
+  include_role:
+    name: amqp-perf
+    tasks_from: perf-producer.yaml
+  # debug:
+  #   msg: 
+  #     - "amq_battery_run_id: {{amq_battery_run_id}}"
+  #     - "connection_string: {{connection_string}}"
+  #     - "client_name: {{client_name}}"
+  #     - "perf_destName: {{perf_destName}}"
+  #     - "perf_producer_messageSize: {{perf_producer_messageSize}}"
+  #     - "perf_producer_heap_min: {{perf_producer_heap_min}}"
+  #     - "perf_producer_heap_max: {{perf_producer_heap_max}}"
+  #     - "perf_producer_clients: {{perf_producer_clients}}"
+  #     - "perf_producer_sessTransacted: {{perf_producer_sessTransacted}}"
+  #     - "perf_producer_sessAckMode: {{perf_producer_sessAckMode}}"
+  #     - "perf_producer_deliveryMode: {{perf_producer_deliveryMode}}"
+
+- name: Pause while running load test 
+  pause:
+    minutes: 6
+
+- name: fetch broker results
+  with_items: "{{battery.brokercluster.instances}}"
+  loop_control:
+    loop_var: broker
+  vars:
+    amq_instance: "{{battery.brokercluster.instances[broker]}}"
+    amq_broker_cluster_index: "{{amq_instance.index}}"
+    amq_cluster_instance: "{{amq_instance.role}}"
+  when: ansible_hostname == battery.brokercluster.instances[broker].host
+  include_role:
+    name: amqbroker
+    tasks_from: fetch-results.yaml   
+  # debug:
+  #   msg: 
+  #     - "amq_battery_run_id: {{amq_battery_run_id}}"
+  #     - "amq_cluster_type: {{amq_cluster_type}}"
+  #     - "amq_cluster_instance: {{amq_cluster_instance}}"
+  #     - "amq_broker_cluster_index: {{amq_broker_cluster_index}}"
+
+- name: fetch client results
+  with_items: "{{battery.clients}}"
+  loop_control:
+    loop_var: client
+  vars:
+    client_name: "{{runid}}-{{client.clientid}}"
+  when: ansible_hostname == client.host
+  include_role:
+    name: amqp-perf
+    tasks_from: fetch-results.yaml
+  # debug:
+  #   msg:
+  #     - "amq_battery_run_id: {{amq_battery_run_id}}"
+  #     - "client_name: {{client_name}}"
+     
+

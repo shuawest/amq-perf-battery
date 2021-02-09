@@ -1,0 +1,33 @@
+---
+
+- name: Stop Artemis Service
+  ignore_errors: true
+  shell: |
+    {{amq_instance_path}}/bin/artemis-service stop
+
+- name: Force Stop Artemis Service
+  ignore_errors: true
+  shell: |
+    {{amq_instance_path}}/bin/artemis-service force-stop
+
+- name: Force kill all Artemis Services
+  ignore_errors: true
+  shell: |
+    jps -l | grep {{amq_jps_name}} | awk '{print $1}' | xargs kill -9
+
+- name: Pause while shutting down 
+  pause:
+    seconds: 3
+
+- name: Remove AMQ Broker instance
+  file:
+    path: "{{amq_instance_path}}/"
+    state: absent
+
+- name: Remove AMQ Broker data directory
+  file:
+    path: "{{amq_data_dir}}/"
+    state: absent
+
+
+

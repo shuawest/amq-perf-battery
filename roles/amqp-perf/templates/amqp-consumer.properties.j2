@@ -1,0 +1,47 @@
+factory.remoteURI={{connection_string}}
+factory.username={{amq_broker_user}}
+factory.password={{amq_broker_pass}}
+factory.forceAsyncSend={{perf_factory_forceAsynSend}}
+#factory.forceSyncSend={{perf_factory_forceSyncSend}}
+#factory.forceAsyncAcks={{perf_factory_forceAsyncAcks}}
+factory.prefetchPolicy.queuePrefetch={{perf_factory_queuePrefetch}}
+factory.prefetchPolicy.durableTopicPrefetch={{perf_factory_durableTopicPrefetch}}
+factory.prefetchPolicy.maxPrefetchSize={{perf_factory_maxPrefetchSize}}
+#factory.presettlePolicy.presettleAll={{perf_factory_presettleAll}}
+
+sysTest.clientPrefix={{client_name}}JmsConsumer
+
+#sysTest.reportType=xml    
+sysTest.reportDir=./target/
+sysTest.samplers={{perf_samplers}}
+sysTest.spiClass={{perf_spi}}
+
+# ‘time’ - keep sending messages until a specific interval of time elapses. 
+# ‘count’ - keep sending messages until N messages has been sent.
+consumer.recvType={{perf_consumer_recvType}}
+consumer.recvDuration={{perf_consumer_recvDuration}}
+consumer.recvCount={{perf_consumer_recvCount}}
+consumer.recvDelay={{perf_consumer_recvDelay}}
+
+# all:    All clients will send/receive to all destinations. 
+# equal:  Clients will equally divide the destinations among themselves. 
+# divide: Clients will divide the destinations among themselves regardless of equality. 
+sysTest.destDistro={{perf_destDistro}}
+consumer.destComposite={{perf_destComposite}}
+consumer.destName={{perf_destName}}
+
+# Tunables
+sysTest.numClients={{perf_consumer_clients}}
+sysTest.totalDests={{perf_consumer_dest_count}}
+
+consumer.durable={{perf_consumer_durable}}
+consumer.asyncRecv={{perf_consumer_asyncRecv}}
+consumer.sessTransacted={{perf_consumer_sessTransacted}}
+consumer.commitAfterXMsgs={{perf_consumer_commitAfterXMsgs}}
+consumer.sessAckMode={{perf_consumer_sessAckMode}}
+
+
+
+
+
+

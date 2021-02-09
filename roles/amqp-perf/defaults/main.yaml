@@ -1,0 +1,70 @@
+---
+
+amq_root: /home/jowest/msgaas
+amq_perf_test_path: "{{amq_root}}/amqp-perf-test"
+
+amq_perf_test_src: /Users/jowest/dev/repos/msgaas/amq-perf-battery/amqp-perf-test
+
+amq_battery_run_id: a1
+amq_battery_run_root: /Users/jowest/dev/repos/msgaas/amq-perf-battery/runs
+
+amq_host: localhost
+amq_port_offset: 0
+amq_web_port: 8161
+amq_amqp_port: 5672
+amq_core_port: 61616
+amq_broker_user: admin
+amq_broker_pass: admin
+   
+perf_consumer_heap_min: 8G
+perf_consumer_heap_max: 8G
+
+perf_producer_heap_min: 8G
+perf_producer_heap_max: 8G
+
+perf_connection: amqp://{{amq_host}}:{{amq_amqp_port}}
+perf_factory_forceAsynSend: "true"
+perf_factory_forceSyncSend: "false"
+perf_factory_forceAsyncAcks: "true"
+perf_factory_queuePrefetch: 1000
+perf_factory_durableTopicPrefetch: 1000
+perf_factory_maxPrefetchSize: 1000
+perf_factory_presettleAll: "true"
+
+perf_samplers: "tp,cpu"
+perf_spi: org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory
+
+perf_destDistro: equal
+perf_destName: queue://TEST.FOO
+perf_destComposite: "false"
+
+# Producer
+
+perf_producer_sendType: time
+perf_producer_sendCount: 1000000
+perf_producer_sendDuration: 300000
+perf_producer_sendDelay: 0
+
+perf_producer_clients: 8
+perf_producer_dest_count: 1
+perf_producer_sessTransacted: "false"
+perf_producer_sessAckMode: autoAck
+perf_producer_commitAfterXMsgs: 1
+perf_producer_deliveryMode: persistent
+perf_producer_messageSize: 1024
+
+
+# Consumer
+perf_consumer_recvType: time
+perf_consumer_recvCount: 1000000
+perf_consumer_recvDuration: 300000
+perf_consumer_recvDelay: 0
+
+perf_consumer_clients: 8
+perf_consumer_dest_count: 1
+perf_consumer_durable: "false"
+perf_consumer_asyncRecv: "true"
+perf_consumer_sessTransacted: "false"
+perf_consumer_commitAfterXMsgs: 1
+perf_consumer_sessAckMode: autoAck
+

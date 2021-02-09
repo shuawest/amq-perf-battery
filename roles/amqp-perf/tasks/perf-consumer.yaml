@@ -1,0 +1,33 @@
+---
+
+- name: Running consumer with parameters
+  debug:
+    msg:
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "connection_string: {{connection_string}}"
+      - "client_name: {{client_name}}"
+      - "perf_destName: {{perf_destName}}"
+      - "perf_consumer_heap_min: {{perf_consumer_heap_min}}"
+      - "perf_consumer_heap_max: {{perf_consumer_heap_max}}"
+      - "perf_consumer_clients: {{perf_consumer_clients}}"
+      - "perf_consumer_sessTransacted: {{perf_consumer_sessTransacted}}"
+      - "perf_consumer_sessAckMode: {{perf_consumer_sessAckMode}}"
+
+- name: Configure the consumer settings
+  template: 
+    src: templates/amqp-consumer.properties.j2
+    dest: "{{amq_perf_test_path}}/src/main/resources/{{client_name}}-amqp-consumer.properties"
+  
+- name: Start the performance test consumer
+  args:
+    chdir: "{{amq_perf_test_path}}"
+  shell: |
+    export MAVEN_OPTS="-Xmx{{perf_consumer_heap_min}} -Xms{{perf_consumer_heap_max}}" 
+    nohup mvn activemq-perf:consumer \
+      -DsysTest.propsConfigFile=src/main/resources/{{client_name}}-amqp-consumer.properties \
+      > {{amq_perf_test_path}}/target/{{client_name}}-consumer.log 2>&1 &
+
+
+
+
+

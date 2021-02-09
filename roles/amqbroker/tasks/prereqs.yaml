@@ -1,0 +1,45 @@
+---
+
+- name: Ensure broker firewall ports are open
+  become: true
+  with_items: 
+  - "{{amq_web_port}}/tcp"
+  - "{{amq_amqp_port}}/tcp"
+  - "{{amq_core_port}}/tcp"
+  ansible.posix.firewalld:
+    port: "{{item}}"
+    permanent: yes
+    state: enabled
+    immediate: yes
+
+- name: Install prerequisite packages
+  become: yes
+  vars:
+    packages:
+    - libaio
+    - java-1.8.0-openjdk
+    - java-1.8.0-openjdk-devel
+    - jq
+    - unzip
+    - firewalld
+  dnf:
+    name: "{{ packages }}"
+    state: present
+
+- name: Create broker root path if it doesn't exist
+  file: 
+    path: "{{amq_root}}"
+    state: directory
+
+- name: Copy broker to host
+  copy: 
+    src: "{{amq_archive_local}}"
+    dest: "{{amq_archive_remote}}"
+
+- name: Unzip broker archive
+  unarchive:
+    remote_src: yes
+    src: "{{amq_archive_remote}}"
+    dest: "{{amq_root}}"
+    creates: "{{amq_install_path}}/bin/artemis"
+

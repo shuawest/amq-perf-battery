@@ -1,0 +1,32 @@
+---
+
+- name: Running producer with parameters
+  debug:
+    msg:
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "connection_string: {{connection_string}}"
+      - "client_name: {{client_name}}"
+      - "perf_destName: {{perf_destName}}"
+      - "perf_producer_messageSize: {{perf_producer_messageSize}}"
+      - "perf_producer_heap_min: {{perf_producer_heap_min}}"
+      - "perf_producer_heap_max: {{perf_producer_heap_max}}"
+      - "perf_producer_clients: {{perf_producer_clients}}"
+      - "perf_producer_sessTransacted: {{perf_producer_sessTransacted}}"
+      - "perf_producer_sessAckMode: {{perf_producer_sessAckMode}}"
+      - "perf_producer_deliveryMode: {{perf_producer_deliveryMode}}"
+
+
+- name: Configure the producer settings
+  template: 
+    src: templates/amqp-producer.properties.j2
+    dest: "{{amq_perf_test_path}}/src/main/resources/{{client_name}}-amqp-producer.properties"
+  
+- name: Start the performance test producer
+  args:
+    chdir: "{{amq_perf_test_path}}"
+  shell: |
+    export MAVEN_OPTS="-Xmx{{perf_producer_heap_min}} -Xms{{perf_producer_heap_max}}" 
+    nohup mvn activemq-perf:producer \
+      -DsysTest.propsConfigFile=src/main/resources/{{client_name}}-amqp-producer.properties \
+      > {{amq_perf_test_path}}/target/{{client_name}}-producer.log 2>&1 &
+
