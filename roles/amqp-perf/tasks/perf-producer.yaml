@@ -30,3 +30,15 @@
       -DsysTest.propsConfigFile=src/main/resources/{{client_name}}-amqp-producer.properties \
       > {{amq_perf_test_path}}/target/{{client_name}}-producer.log 2>&1 &
 
+# - name: Pause to allow client to start before starting the next
+#   pause:
+#     seconds: 4
+
+- name: Check the producer started
+  shell: jps -mlvV
+  register: proclist
+- name: Display producer processes after start
+  debug: 
+    msg: "Processes running on {{ansible_hostname}} \n{{proclist.stdout}}"
+
+# TODO: fail if the client_name isn't in the jps verbose out

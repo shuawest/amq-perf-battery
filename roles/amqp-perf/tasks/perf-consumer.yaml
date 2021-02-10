@@ -27,7 +27,13 @@
       -DsysTest.propsConfigFile=src/main/resources/{{client_name}}-amqp-consumer.properties \
       > {{amq_perf_test_path}}/target/{{client_name}}-consumer.log 2>&1 &
 
+- name: Check the consumer started
+  shell: jps -mlvV
+  register: proclist
+- name: Display consumer processes after start
+  debug: 
+    msg: "Processes running on {{ansible_hostname}} \n{{proclist.stdout}}"
 
-
+# TODO: fail if the client_name isn't in the jps verbose out
 
 

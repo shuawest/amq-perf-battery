@@ -93,5 +93,10 @@
     flat: yes
     fail_on_missing: no
 
-
+- name: Fetch the updated broker.xml log to the run
+  fetch:
+    src: "{{amq_instance_path}}/etc/broker.xml"
+    dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/{{amq_broker_name}}-broker.gen.xml"
+    flat: yes
+    fail_on_missing: no
 
