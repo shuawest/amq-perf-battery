@@ -1,0 +1,76 @@
+---
+
+- name: set run facts for all hosts
+  set_fact:
+    run: "{{battery.runs[runid]}}"
+    amq_battery_run_id: "{{runid}}"
+    amq_cluster_type: "{{battery.brokercluster.model}}"
+    connection_string: "{{battery.brokercluster.connection}}"
+   
+- name: process results for each client
+  with_items: "{{battery.clients}}"
+  loop_control:
+    loop_var: client
+  vars:
+    client_name: "{{runid}}-{{client.clientid}}"
+    client_role: "{{client.role}}"
+  when: ansible_hostname == client.host
+  include_role:
+    name: amqp-perf
+    tasks_from: process-results.yaml
+
+# - name: configure consumers
+#   with_items: "{{battery.clients | selectattr('role','equalto','consumer')}}"
+#   loop_control:
+#     loop_var: consumer
+#   vars:
+#     client_name: "{{runid}}-{{consumer.clientid}}"
+#     perf_destName: "{{consumer.dest}}"
+#     perf_consumer_heap_min: "{{run.consumer_heap}}"
+#     perf_consumer_heap_max: "{{run.consumer_heap}}"
+#     perf_consumer_clients: "{{run.consumer_threads}}"
+#     perf_consumer_sessTransacted: "{{run.transacted}}"
+#     perf_consumer_sessAckMode: "{{run.consumer_ack_mode}}"
+#   when: ansible_hostname == consumer.host
+#   include_role:
+#     name: amqp-perf
+#     tasks_from: perf-consumer.yaml
+
+# - name: configure producers
+#   with_items: "{{battery.clients | selectattr('role','equalto','producer')}}"
+#   loop_control:
+#     loop_var: producer
+#   vars:
+#     client_name: "{{runid}}-{{producer.clientid}}"
+#     perf_destName: "{{producer.dest}}"
+#     perf_producer_messageSize: "{{run.messageSize}}"
+#     perf_producer_heap_min: "{{run.producer_heap}}"
+#     perf_producer_heap_max: "{{run.producer_heap}}"
+#     perf_producer_clients: "{{run.producer_threads}}"
+#     perf_producer_sessTransacted: "{{run.transacted}}"
+#     perf_producer_sessAckMode: "{{run.producer_ack_mode}}"
+#     perf_producer_deliveryMode: "{{run.mode}}" 
+#   when: ansible_hostname == producer.host
+#   include_role:
+#     name: amqp-perf
+#     tasks_from: perf-producer.yaml
+
+# - name: Pause while running load test 
+#   pause:
+#     minutes: 6
+
+# - name: fetch broker results
+#   with_items: "{{battery.brokercluster.instances}}"
+#   loop_control:
+#     loop_var: broker
+#   vars:
+#     amq_instance: "{{battery.brokercluster.instances[broker]}}"
+#     amq_broker_cluster_index: "{{amq_instance.index}}"
+#     amq_cluster_instance: "{{amq_instance.role}}"
+#   when: ansible_hostname == battery.brokercluster.instances[broker].host
+#   include_role:
+#     name: amqbroker
+#     tasks_from: fetch-results.yaml   
+
+
+

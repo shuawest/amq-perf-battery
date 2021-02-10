@@ -128,8 +128,8 @@
 
 
          <!-- Acceptor for every supported protocol -->
-         <acceptor name="artemis">tcp://{{amq_host}}:{{amq_core_port}}?tcpSendBufferSize={{tcpSendBufferSize}};tcpReceiveBufferSize={{tcpReceiveBufferSize}};amqpMinLargeMessageSize=102400;protocols=CORE,AMQP,STOMP,HORNETQ,MQTT,OPENWIRE;useEpoll=true;amqpCredits={{amqpCredits}};amqpLowCredits={{amqpLowCredits}};amqpDuplicateDetection=true</acceptor>
-
+         <acceptor name="artemis">tcp://{{amq_host}}:{{amq_core_port}}?tcpSendBufferSize={{tcpSendBufferSize}};tcpReceiveBufferSize={{tcpReceiveBufferSize}};amqpMinLargeMessageSize=102400;protocols=CORE,AMQP;useEpoll=true;amqpCredits={{amqpCredits}};amqpLowCredits={{amqpLowCredits}};amqpDuplicateDetection=true</acceptor>
+         
          <!-- AMQP Acceptor.  Listens on default AMQP port for AMQP traffic.-->
          <acceptor name="amqp">tcp://{{amq_host}}:{{amq_amqp_port}}?tcpSendBufferSize={{tcpSendBufferSize}};tcpReceiveBufferSize={{tcpReceiveBufferSize}};protocols=AMQP;useEpoll=true;amqpCredits={{amqpCredits}};amqpLowCredits={{amqpLowCredits}};amqpMinLargeMessageSize=102400;amqpDuplicateDetection=true</acceptor>
 

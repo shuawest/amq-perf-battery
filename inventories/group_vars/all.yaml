@@ -68,17 +68,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_caa_paa_2: 
         mode: nonpersistent
@@ -92,17 +92,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_caa_paa_3: 
         mode: nonpersistent
@@ -116,17 +116,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_caa_paa_4: 
         mode: nonpersistent
@@ -140,23 +140,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       np_blk_caa_paa_1: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -165,22 +165,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_caa_paa_2: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -189,22 +189,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_caa_paa_3: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -213,22 +213,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_caa_paa_4: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -237,17 +237,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       np_pg_cca_pca_1: 
@@ -262,17 +262,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cca_pca_2: 
         mode: nonpersistent
@@ -286,17 +286,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cca_pca_3: 
         mode: nonpersistent
@@ -310,17 +310,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cca_pca_4: 
         mode: nonpersistent
@@ -334,23 +334,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       np_blk_cca_pca_1: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -359,22 +359,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cca_pca_2: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -383,22 +383,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cca_pca_3: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -407,22 +407,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cca_pca_4: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -431,17 +431,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       np_pg_cda_pda_1: 
@@ -456,17 +456,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cda_pda_2: 
         mode: nonpersistent
@@ -480,17 +480,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cda_pda_3: 
         mode: nonpersistent
@@ -504,17 +504,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_pg_cda_pda_4: 
         mode: nonpersistent
@@ -528,23 +528,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       np_blk_cda_pda_1: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -553,22 +553,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cda_pda_2: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -577,22 +577,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cda_pda_3: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -601,22 +601,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       np_blk_cda_pda_4: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -625,17 +625,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       tx_np_pg_cta_pta_1: 
@@ -650,17 +650,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_pg_cta_pta_2: 
         mode: nonpersistent
@@ -674,17 +674,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_pg_cta_pta_3: 
         mode: nonpersistent
@@ -698,17 +698,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_pg_cta_pta_4: 
         mode: nonpersistent
@@ -722,23 +722,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       tx_np_blk_cta_pta_1: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -747,22 +747,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_blk_cta_pta_2: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -771,22 +771,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_blk_cta_pta_3: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -795,22 +795,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_np_blk_cta_pta_4: 
         mode: nonpersistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -819,17 +819,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_pg_caa_paa_1: 
@@ -844,17 +844,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_caa_paa_2: 
         mode: persistent
@@ -868,17 +868,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_caa_paa_3: 
         mode: persistent
@@ -892,17 +892,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_caa_paa_4: 
         mode: persistent
@@ -916,23 +916,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_blk_caa_paa_1: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -941,22 +941,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_caa_paa_2: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -965,22 +965,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_caa_paa_3: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -989,22 +989,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_caa_paa_4: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: autoAck
         producer_ack_mode: autoAck
@@ -1013,17 +1013,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_pg_cca_pca_1: 
@@ -1038,17 +1038,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cca_pca_2: 
         mode: persistent
@@ -1062,17 +1062,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cca_pca_3: 
         mode: persistent
@@ -1086,17 +1086,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cca_pca_4: 
         mode: persistent
@@ -1110,23 +1110,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_blk_cca_pca_1: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -1135,22 +1135,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cca_pca_2: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -1159,22 +1159,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cca_pca_3: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -1183,22 +1183,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cca_pca_4: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: clientAck
         producer_ack_mode: clientAck
@@ -1207,17 +1207,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_pg_cda_pda_1: 
@@ -1232,17 +1232,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cda_pda_2: 
         mode: persistent
@@ -1256,17 +1256,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cda_pda_3: 
         mode: persistent
@@ -1280,17 +1280,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_pg_cda_pda_4: 
         mode: persistent
@@ -1304,23 +1304,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       p_blk_cda_pda_1: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -1329,22 +1329,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cda_pda_2: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -1353,22 +1353,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cda_pda_3: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -1377,22 +1377,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       p_blk_cda_pda_4: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'false'
         consumer_ack_mode: dupsAck
         producer_ack_mode: dupsAck
@@ -1401,17 +1401,17 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       tx_p_pg_cta_pta_1: 
@@ -1426,17 +1426,17 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_pg_cta_pta_2: 
         mode: persistent
@@ -1450,17 +1450,17 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_pg_cta_pta_3: 
         mode: persistent
@@ -1474,17 +1474,17 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_pg_cta_pta_4: 
         mode: persistent
@@ -1498,23 +1498,23 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
 
       tx_p_blk_cta_pta_1: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -1523,22 +1523,22 @@ battery:
         producer_threads: 8
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_blk_cta_pta_2: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -1547,22 +1547,22 @@ battery:
         producer_threads: 16
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_blk_cta_pta_3: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -1571,22 +1571,22 @@ battery:
         producer_threads: 100
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO
       tx_p_blk_cta_pta_4: 
         mode: persistent
         storage_mode: blocking
-        address_full_policy: PAGE
+        address_full_policy: BLOCK
         transacted: 'true'
         consumer_ack_mode: transacted
         producer_ack_mode: transacted
@@ -1595,15 +1595,15 @@ battery:
         producer_threads: 50
         consumer_heap: 6G
         producer_heap: 6G
-        broker_heap: 2G
-        broker_max_size: 8192
-        journalDeviceBlockSize: 16384
+        broker_heap: 4G
+        broker_max_size: 1408402
+        journalDeviceBlockSize: 4096
         pageSyncTimeout: 1436000
         diskScanPeriod: 5000
         journalMaxIo: 4096
         journalBufferTimeout: 20000
         journalDatasync: 'true'
-        journalMinFiles: 2
+        journalMinFiles: 10
         journalPoolFiles: 10
-        journalFileSize: 10M
+        journalFileSize: 20M
         journalType: ASYNCIO

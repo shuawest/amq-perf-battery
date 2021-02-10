@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  tasks:
+
+    - name: Process results for each run
+      with_items: "{{battery.runs}}"
+      loop_control:
+        loop_var: runid
+      include: run-results.yaml
+

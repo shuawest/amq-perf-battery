@@ -1,0 +1,14 @@
+---
+
+
+- name: Force kill all perf-battery processes
+  ignore_errors: true
+  shell: |
+    jps -mlvV | grep {{amq_perf_test_path}} | awk '{print $1}' | xargs kill -9
+ 
+- name: Build amqp-perf-test
+  args:
+    chdir: "{{amq_perf_test_path}}"
+  shell: |
+    mvn clean install
+

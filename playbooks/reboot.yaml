@@ -1,0 +1,9 @@
+
+- hosts: all
+  tasks: 
+
+    - name: reboot {{ansible_hostname}}
+      become: yes
+      shell: reboot
+
+

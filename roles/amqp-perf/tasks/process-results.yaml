@@ -1,0 +1,45 @@
+---
+
+- name: Processing results for client {{client_name}}
+  debug:
+    msg:
+      - "amq_battery_run_id: {{amq_battery_run_id}}"
+      - "amq_cluster_type: {{amq_cluster_type}}"
+      - "client_name: {{client_name}}"
+
+- name: Process the consumer log for {{client_name}} 
+  delegate_to: localhost
+  when: client_role == "consumer"
+  args:
+    chdir: "{{amq_battery_run_root}}/{{amq_battery_run_id}}"
+  shell: |    
+    RESULT_LOG=`ls | grep '{{client_name}}' | grep 'consumer.log'`     
+    function extract() {
+      cat $RESULT_LOG | grep "$1" | sed "s/$1//g"
+    }
+    SYS_TP=`extract "System Total Throughput: "`
+    SYS_AVG_TP=`extract "System Average Throughput: "`
+    SYS_TMEAN_TP=`extract "System Average Throughput Excluding Min\/Max: "`
+    CL_AVG_TP=`extract "System Average Client Throughput: "`
+    CL_TMEAN_TP=`extract "System Average Client Throughput Excluding Min\/Max: "`
+    CL_MIN_TP=`extract "Min Average Client Throughput: .*{{client_name}}.*value="`
+    CL_MAX_TP=`extract "Max Average Client Throughput: .*{{client_name}}.*value="`
+    SUMMARY=`echo "{{client_name}}, $SYS_TP, $SYS_AVG_TP, $SYS_TMEAN_TP, $CL_AVG_TP, $CL_TMEAN_TP, $CL_MIN_TP, $CL_MAX_TP"`
+    echo "$SUMMARY" >> {{amq_battery_run_root}}/summary.log 
+    echo "$SUMMARY"
+  register: consumer_logs
+
+- name: Consumer Log files for {{client_name}}
+  when: client_role == 'consumer'    
+  debug: 
+    msg: "{{amq_battery_run_id}} consumer logs: \n{{consumer_logs.stdout}}"
+
+# - name: Process the artemis log for {{client_name}} 
+#   delegate_to: localhost
+#   args:
+#     chdir: "{{amq_battery_run_root}}/{{amq_battery_run_id}}"
+#   shell: |
+#     ls {{client_name}}*consumer.log
+#   register: consumer_logs  
+
+

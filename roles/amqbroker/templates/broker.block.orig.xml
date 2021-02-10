@@ -52,9 +52,9 @@ under the License.
 
       <journal-pool-files>10</journal-pool-files>
 
-      <journal-device-block-size>16384</journal-device-block-size>
+      <journal-device-block-size>4096</journal-device-block-size>
 
-      <journal-file-size>10M</journal-file-size>
+      <journal-file-size>20M</journal-file-size>
       
       <!--
        This value was determined through a calculation.
@@ -130,6 +130,8 @@ under the License.
             <!-- the system will enter into page mode once you hit this limit.
            This is an estimate in bytes of how much the messages are using in memory -->
       <global-max-size>8192</global-max-size>
+<!-- set to 1/4 of heap --> 
+<!-- calculates automatically - comment this out --> 
 
       <acceptors>
 
@@ -148,6 +150,7 @@ under the License.
 
          <!-- Acceptor for every supported protocol -->
          <acceptor name="artemis">tcp://localhost:61616?tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576;amqpMinLargeMessageSize=102400;protocols=CORE,AMQP,STOMP,HORNETQ,MQTT,OPENWIRE;useEpoll=true;amqpCredits=1000;amqpLowCredits=300;amqpDuplicateDetection=true</acceptor>
+            <!-- remove unncessary protocols --> 
 
          <!-- AMQP Acceptor.  Listens on default AMQP port for AMQP traffic.-->
          <acceptor name="amqp">tcp://localhost:5672?tcpSendBufferSize=1048576;tcpReceiveBufferSize=1048576;protocols=AMQP;useEpoll=true;amqpCredits=1000;amqpLowCredits=300;amqpMinLargeMessageSize=102400;amqpDuplicateDetection=true</acceptor>
