@@ -1,0 +1,107 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< org.jboss.examples:amqp-perf-test >------------------
+[INFO] Building ActiveMQ Perf: AMQP Perf Test 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- activemq-perf-maven-plugin:5.11.0:producer (default-cli) @ amqp-perf-test ---
+[INFO] Loading properties file: /home/jowest/msgaas/amqp-perf-test/src/main/resources/np_blk_caa_paa_2-beelink1_producer2-amqp-producer.properties
+[INFO] Created: org.apache.qpid.jms.JmsConnectionFactory using SPIConnectionFactory: org.jboss.examples.amqp.spi.AMQPReflectionSPIConnectionFactory
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Creating queue: queue://TEST.PERF2
+[INFO] Sampling duration: 300000 ms, ramp up: 0 ms, ramp down: 0 ms
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Best match for SASL auth was: SASL-PLAIN
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:13 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:15 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:12 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:2 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:7 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:4 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:9 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:11 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:17 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:16 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:14 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:6 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:5 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:10 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:8 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Connection ID:beelink1.milab.joshwest.me-41719-1612938071400-0:3 connected to remote Broker: amqp://vivo2.milab.joshwest.me:5672
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating JMS Connection: Provider=QpidJMS-0.5.0, JMS Spec=1.1
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Creating  producer to: TEST.PERF2 with non-persistent delivery.
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms
+[INFO] Starting to publish 1024 byte(s) messages for 300000 ms

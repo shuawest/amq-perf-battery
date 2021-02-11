@@ -14,7 +14,7 @@
     src: "{{amq_instance_path}}/log/artemis.log"
     dest: "{{amq_battery_run_root}}/{{amq_battery_run_id}}/artemis.log"
     flat: yes
-    fail_on_missing: no
+    fail_on_missing: yes
 
 
 

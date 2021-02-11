@@ -1,0 +1,52 @@
+2021-02-10 17:13:35,379 INFO  [org.apache.activemq.artemis.integration.bootstrap] AMQ101000: Starting ActiveMQ Artemis Server
+2021-02-10 17:13:35,416 INFO  [org.apache.activemq.artemis.core.server] AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=true,journalDirectory=/home/jowest/msgaas/data/journal,bindingsDirectory=/home/jowest/msgaas/data/bindings,largeMessagesDirectory=/home/jowest/msgaas/data/large-messages,pagingDirectory=/home/jowest/msgaas/data/paging)
+2021-02-10 17:13:35,417 INFO  [org.apache.activemq.artemis.core.server] AMQ221006: Waiting to obtain live lock
+2021-02-10 17:13:35,439 INFO  [org.apache.activemq.artemis.core.server] AMQ221012: Using AIO Journal
+2021-02-10 17:13:35,508 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2021-02-10 17:13:35,508 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-amqp-protocol]. Adding protocol support for: AMQP
+2021-02-10 17:13:35,508 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-hornetq-protocol]. Adding protocol support for: HORNETQ
+2021-02-10 17:13:35,508 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-mqtt-protocol]. Adding protocol support for: MQTT
+2021-02-10 17:13:35,508 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-openwire-protocol]. Adding protocol support for: OPENWIRE
+2021-02-10 17:13:35,509 INFO  [org.apache.activemq.artemis.core.server] AMQ221043: Protocol module found: [artemis-stomp-protocol]. Adding protocol support for: STOMP
+2021-02-10 17:13:35,553 INFO  [org.apache.activemq.artemis.core.server] AMQ221034: Waiting indefinitely to obtain live lock
+2021-02-10 17:13:35,553 INFO  [org.apache.activemq.artemis.core.server] AMQ221035: Live Server Obtained live lock
+2021-02-10 17:13:36,087 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address DLQ supporting [ANYCAST]
+2021-02-10 17:13:36,097 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue DLQ on address DLQ
+2021-02-10 17:13:36,129 INFO  [org.apache.activemq.artemis.core.server] AMQ221080: Deploying address ExpiryQueue supporting [ANYCAST]
+2021-02-10 17:13:36,131 INFO  [org.apache.activemq.artemis.core.server] AMQ221003: Deploying ANYCAST queue ExpiryQueue on address ExpiryQueue
+2021-02-10 17:13:36,227 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started EPOLL Acceptor at vivo2.milab.joshwest.me:61616 for protocols [CORE,AMQP]
+2021-02-10 17:13:36,234 INFO  [org.apache.activemq.artemis.core.server] AMQ221020: Started EPOLL Acceptor at vivo2.milab.joshwest.me:5672 for protocols [AMQP]
+2021-02-10 17:13:36,237 INFO  [org.apache.activemq.artemis.core.server] AMQ221007: Server is now live
+2021-02-10 17:13:36,237 INFO  [org.apache.activemq.artemis.core.server] AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.16.0.redhat-00012 [sharedstore_master_1, nodeID=37e2498c-6bed-11eb-bf32-b06ebf0b932a] 
+2021-02-10 17:13:36,404 INFO  [org.apache.amq.hawtio.branding.PluginContextListener] Initialized amq-broker-redhat-branding plugin
+2021-02-10 17:13:36,436 INFO  [org.apache.activemq.hawtio.plugin.PluginContextListener] Initialized artemis-plugin plugin
+2021-02-10 17:13:36,710 INFO  [org.apache.activemq.artemis] AMQ241001: HTTP Server started at http://vivo2.milab.joshwest.me:8161
+2021-02-10 17:14:47,599 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.21:44224 has occurred.
+2021-02-10 17:14:51,732 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.22:60738 has occurred.
+2021-02-10 17:14:55,786 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.23:52722 has occurred.
+2021-02-10 17:14:57,807 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.24:38762 has occurred.
+2021-02-10 17:15:00,226 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.24:38768 has occurred.
+2021-02-10 17:15:03,115 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.21:44230 has occurred.
+2021-02-10 17:15:05,589 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.21:44236 has occurred.
+2021-02-10 17:15:07,802 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.22:60744 has occurred.
+2021-02-10 17:15:10,272 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.22:60752 has occurred.
+2021-02-10 17:15:12,413 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.23:52728 has occurred.
+2021-02-10 17:15:14,727 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.23:52734 has occurred.
+2021-02-10 17:15:17,260 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.24:38774 has occurred.
+2021-02-10 17:15:20,299 ERROR [org.apache.activemq.artemis.core.server] AMQ224088: Timeout (10 seconds) on acceptor "amqp" during protocol handshake with /192.168.100.24:38780 has occurred.
+2021-02-10 17:19:41,926 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 5f875daa-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:41,926 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 5f875da9-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:41,926 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 5f875daa-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:41,926 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 5f875da9-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:45,968 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 61f0204d-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:45,968 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 61f0204d-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:47,965 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 63208a01-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:47,965 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 63208a01-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:50,359 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 648dd5a5-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:50,359 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 648dd5a5-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:50,359 WARN  [org.apache.activemq.artemis.core.server] AMQ222061: Client connection failed, clearing up resources for session 648dd5a6-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:50,359 WARN  [org.apache.activemq.artemis.core.server] AMQ222107: Cleared up resources for session 648dd5a6-6bed-11eb-bf32-b06ebf0b932a
+2021-02-10 17:19:50,552 WARN  [org.apache.activemq.artemis.core.server] AMQ222183: Blocking message production on address 'TEST.PERF'; size is currently: 1,421,439 bytes; max-size-bytes on address: -1, global-max-size is 1,421,439
+2021-02-10 17:19:50,552 WARN  [org.apache.activemq.artemis.core.server] AMQ222183: Blocking message production on address 'TEST.PERF'; size is currently: 1,421,439 bytes; max-size-bytes on address: -1, global-max-size is 1,421,439
+2021-02-10 17:19:50,552 WARN  [org.apache.activemq.artemis.core.server] AMQ222183: Blocking message production on address 'TEST.PERF'; size is currently: 1,421,439 bytes; max-size-bytes on address: -1, global-max-size is 1,421,439
+2021-02-10 17:19:50,552 WARN  [org.apache.activemq.artemis.core.server] AMQ222183: Blocking message production on address 'TEST.PERF'; size is currently: 1,421,439 bytes; max-size-bytes on address: -1, global-max-size is 1,421,439

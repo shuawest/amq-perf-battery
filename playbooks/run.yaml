@@ -92,6 +92,7 @@
     loop_var: broker
   vars:
     amq_instance: "{{battery.brokercluster.instances[broker]}}"
+    amq_host: "{{amq_instance.hostname}}"
     amq_broker_cluster_index: "{{amq_instance.index}}"
     amq_cluster_instance: "{{amq_instance.role}}"
   when: ansible_hostname == battery.brokercluster.instances[broker].host
